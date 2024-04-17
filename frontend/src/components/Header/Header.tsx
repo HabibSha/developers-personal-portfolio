@@ -3,8 +3,6 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
-import "./header.css";
-
 type NavLink = {
   id: string;
   title: string;
@@ -18,9 +16,9 @@ const Header: React.FC<HeaderProps> = ({ flexItems, navLinks }) => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <section className="bg-slate-700 w-full h-[8vh] flex items-center fixed">
+    <section className="bg-transparent w-full h-[9vh] border-b-[1px] border-slate-600 flex items-center fixed z-50">
       <nav
-        className={`${flexItems} container mx-auto md:container lg:container xl:container xl:px-8`}
+        className={`${flexItems} container px-4 mx-auto md:container lg:container xl:container xl:px-8`}
       >
         <div className="text-2xl font-bold">Portfolio</div>
         <ul className={`${flexItems} hidden md:flex`}>

@@ -4,7 +4,7 @@ import "./layout.css";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-import { navLinks } from "../components/constants/index.ts";
+import { navLinks } from "../components/Constants/index.ts";
 
 const Layout = () => {
   const flexItems = "flex items-center justify-between";
@@ -14,7 +14,7 @@ const Layout = () => {
       <main className="pt-0 min-h-[calc(100vh)]">
         <Outlet />
       </main>
-      <Footer />
+      <Footer flexItems={flexItems} />
     </>
   );
 };
