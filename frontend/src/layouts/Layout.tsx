@@ -7,14 +7,13 @@ import Footer from "../components/Footer/Footer";
 import { navLinks } from "../components/Constants/index.ts";
 
 const Layout = () => {
-  const flexItems = "flex items-center justify-between";
   return (
     <>
-      <Header navLinks={navLinks} flexItems={flexItems} />
-      <main className="pt-0 min-h-[calc(100vh)]">
+      <Header navLinks={navLinks} />
+      <main className="relative top-[9vh] pt-0 min-h-[calc(100vh)]">
         <Outlet />
       </main>
-      <Footer flexItems={flexItems} />
+      <Footer />
     </>
   );
 };

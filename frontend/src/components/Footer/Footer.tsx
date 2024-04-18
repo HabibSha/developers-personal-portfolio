@@ -8,39 +8,41 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-type FooterProps = {
-  flexItems: string;
-};
+import styles, { footerSocial } from "../../style";
 
-const Footer: React.FC<FooterProps> = ({ flexItems }) => {
+const Footer: React.FC = () => {
   return (
-    <section className="w-full h-auto bg-black flex items-center py-12">
-      <footer
-        className={`container px-4 mx-auto md:container lg:container xl:container xl:px-8`}
-      >
+    <section
+      className={`w-full h-auto bg-black ${styles.flexCenter} backdrop-blur-sm relative py-12`}
+    >
+      <footer className={`${styles.resContainer} ${styles.paddingX}`}>
         <article
-          className={`sm:${flexItems} flex-col sm:flex-row pb-[2rem] border-b-[1px] border-slate-600`}
+          className={`flex items-start sm:items-center sm:justify-between ${styles.borderBottom} flex-col sm:flex-row pb-[2rem]`}
         >
           <div className="text-2xl font-bold mb-6 sm:mb-0">Portfolio</div>
           <div className="flex items-center gap-2 text-xl">
-            <div className="w-9 h-9 flex items-center justify-center rounded-full bg-slate-800 cursor-pointer">
+            <div className={`${footerSocial.socialLinks} bg-slate-800`}>
               <FaGithub />
             </div>
-            <div className="w-9 h-9 flex items-center justify-center rounded-full bg-blue-500 cursor-pointer">
+            <div className={`${footerSocial.socialLinks} bg-blue-500`}>
               <FaLinkedinIn />
             </div>
-            <div className="w-9 h-9 flex items-center justify-center rounded-full bg-[#fa2a69] cursor-pointer">
+            <div className={`${footerSocial.socialLinks} bg-[#fa2a69]`}>
               <FaInstagram />
             </div>
-            <div className="w-9 h-9 flex items-center justify-center rounded-full bg-blue-600 cursor-pointer">
+            <div className={`${footerSocial.socialLinks} bg-blue-600`}>
               <FaFacebookF />
             </div>
-            <div className="w-9 h-9 flex items-center justify-center rounded-full bg-black cursor-pointer">
+            <div className={`${footerSocial.socialLinks} bg-black`}>
               <FaXTwitter />
             </div>
           </div>
         </article>
-        <article></article>
+        <article className={`${styles.flexCenter}`}>
+          <p className=" absolute bottom-2 text-slate-300 text-[14px]">
+            Copyright &copy; 2024 | All right reserve.
+          </p>
+        </article>
       </footer>
     </section>
   );
