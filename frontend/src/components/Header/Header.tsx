@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { NavLink } from "react-router-dom";
-import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
+// import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
 import styles from "../../style";
@@ -20,10 +20,10 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
-      enableBodyScroll;
+      // enablePageScroll;
     } else {
       setOpenNavigation(true);
-      disableBodyScroll;
+      // disablePageScroll;
     }
   };
 
