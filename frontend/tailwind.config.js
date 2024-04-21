@@ -11,6 +11,23 @@ export default {
         colorOffWhite: "#EEE6FD",
         colorWhite: "#FFFFFF",
       },
+      backgroundColor: {
+        bgPrimary: "#0d0518",
+      },
+      animation: {
+        "spin-infinite": "spin360 4s linear infinite",
+        "spin-halfIn": "spin75 4s linear infinite",
+      },
+      keyframes: {
+        spin360: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        spin75: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(75deg)" },
+        },
+      },
     },
   },
   plugins: [],

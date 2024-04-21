@@ -10,7 +10,7 @@ const Layout = () => {
   return (
     <>
       <Header navLinks={navLinks} />
-      <main className="relative top-[9vh] pt-0 min-h-[calc(100vh)]">
+      <main className="relative min-h-[calc(100vh)]">
         <Outlet />
       </main>
       <Footer />

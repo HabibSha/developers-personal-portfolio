@@ -71,9 +71,9 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
         <div
           className={`${
             !openNavigation ? "translate-x-[100%]" : "translate-x-[0]"
-          } md:hidden transition duration-500 w-3/6 h-screen absolute py-12 top-[9vh] right-0 bg-orange-500 `}
+          } md:hidden transition duration-500 w-full h-screen absolute pt-[10rem] top-[9vh] right-0 bg-orange-600 `}
         >
-          <ul className={`flex flex-col items-center `}>
+          <ul className={`h-full flex flex-col items-center`}>
             {navLinks.map((navLink, index) => {
               const { id, title } = navLink;
               return (
@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
                   <NavLink
                     to={id}
                     className={`${
-                      index === navLinks.length - 1 ? "mb-0" : "mb-[2.8rem]"
+                      index === navLinks.length - 1 ? "mb-0" : "mb-[3.5rem]"
                     }`}
                   >
                     {title}

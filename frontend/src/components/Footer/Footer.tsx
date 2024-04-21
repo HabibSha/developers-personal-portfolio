@@ -9,6 +9,9 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 import styles, { footerSocial } from "../../style";
+import react from "../../assets/react.svg";
+import tailwind from "../../assets/tailwind-css.svg";
+import tailwindP from "../../assets/tailwindP.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -39,6 +42,13 @@ const Footer: React.FC = () => {
           </div>
         </article>
         <article className={`${styles.flexCenter}`}>
+          <img
+            src={react}
+            alt="React"
+            className="w-[5rem] animate-spin-infinite"
+          />
+          <img src={tailwind} alt="" className="w-[5rem] animate-pulse" />
+          <img src={tailwindP} alt="" className="w-16" />
           <p className=" absolute bottom-2 text-slate-300 text-[14px]">
             Copyright &copy; 2024 | All right reserve.
           </p>
