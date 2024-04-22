@@ -26,8 +26,8 @@ export const BackgroundEl: React.FC = () => {
         parallaxContainerRef={parallaxRef}
       >
         <div className="relative">
-          <div className="absolute translate-x-3 translate-y-3 -mt-32 blur-effect"></div>
-          <div className="absolute w-[5rem]">
+          <div className="absolute -top-[16.5rem] -left-[17rem] translate-x-3 translate-y-3 -mt-32 blur-effect"></div>
+          <div className="absolute -top-[16.5rem] -left-[17rem] w-[5rem]">
             <img
               src={reactP}
               alt="React Icon"
@@ -40,8 +40,8 @@ export const BackgroundEl: React.FC = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute translate-y-3 -mt-32 -right-[14rem] blur-effect"></div>
-          <div className="absolute w-[5rem] -right-[15rem]">
+          <div className="absolute right-[13rem] top-[9rem] -translate-x-3 translate-y-3 -mt-32 blur-effect"></div>
+          <div className="absolute w-[5rem] right-[13rem] top-[9rem]">
             <img
               src={tailwindP}
               alt="Tailwind Icon"
@@ -54,8 +54,8 @@ export const BackgroundEl: React.FC = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="absolute translate-x-3 translate-y-3 blur-effect"></div>
-          <div className="absolute w-[5rem]">
+          <div className="absolute bottom-[19rem] left-[10rem] translate-x-4 -translate-y-3 blur-effect"></div>
+          <div className="absolute w-[5rem] bottom-[19rem] left-[10rem]">
             <img
               src={javasriptP}
               alt="Javacript Icon"

@@ -1,10 +1,14 @@
 import { Typewriter } from "react-simple-typewriter";
 
-import { BackgroundEl } from "../design/Hero";
+import "./hero.css";
+// import { BackgroundEl } from "../design/Hero";
+import heroA from "../../assets/hero/heroA.svg";
+// import heroB from "../../assets/hero/heroB.svg";
+// import heroD from "../../assets/hero/heroD.svg";
 
 const Hero = () => {
   return (
-    <section className="relative py-[10rem] grid grid-cols-1 grid-flow-row lg:grid-cols-2 md:gap-5">
+    <section className="relative h-[95vh] md:h-[110vh] lg:h-[80vh] py-[5rem] lg:py-[10rem] grid grid-cols-1 gap-5 lg:grid-cols-2">
       <article>
         <p className="text-lg text-colorOffWhite select-none inline px-4 py-2 rounded-lg bg-gradient">
           Welcome to my Portfolio
@@ -37,8 +41,13 @@ const Hero = () => {
           Connect with me
         </button>
       </article>
-      <article>
-        <BackgroundEl />
+      <article className="relative flex items-center justify-center">
+        {/* <BackgroundEl /> */}
+        <img
+          src={heroA}
+          alt="HeroA"
+          className="max-w-[90%] lg:w-[90%] lg:absolute lg:-top-[6rem] lg:left-[2rem]"
+        />
       </article>
     </section>
   );

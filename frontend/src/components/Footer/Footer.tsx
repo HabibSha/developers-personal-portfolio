@@ -1,5 +1,7 @@
 import React from "react";
 
+// import { Player } from "@lottiefiles/react-lottie-player";
+
 import {
   FaGithub,
   FaLinkedinIn,
@@ -50,6 +52,12 @@ const Footer: React.FC = () => {
           />
           <img src={tailwind} alt="" className="w-[5rem] animate-pulse" />
           <img src={tailwindP} alt="" className="w-16" />
+          {/* <Player
+            autoplay
+            loop
+            src={heroD}
+            style={{ height: "300px", width: "300px" }}
+          ></Player> */}
           <p className=" absolute bottom-2 text-slate-300 text-[14px]">
             Copyright &copy; 2024 | All right reserve.
           </p>
