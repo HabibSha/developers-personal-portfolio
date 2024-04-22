@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
+import "./footer.css";
 import styles, { footerSocial } from "../../style";
 import react from "../../assets/react.svg";
 import tailwind from "../../assets/tailwind-css.svg";

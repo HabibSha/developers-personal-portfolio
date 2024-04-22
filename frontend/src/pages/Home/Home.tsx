@@ -1,12 +1,18 @@
+import "./home.css";
 import Hero from "../../components/Hero/Hero";
+import styles from "../../style";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <section className="bg-bgPrimary h-screen pt-[9vh]">
-      <div className="container mx-auto">
-        hello
-        <Hero />
-      </div>
+    <section className="border-b-[1px]">
+      <article className="relative h-auto pt-[9vh]">
+        <div className="blur-leftCorner absolute"></div>
+        <div className="blur-rightCorner absolute"></div>
+        <div className="blur-bottomCorner absolute"></div>
+        <div className={`container mx-auto ${styles.paddingX}`}>
+          <Hero />
+        </div>
+      </article>
     </section>
   );
 };

@@ -1,0 +1,30 @@
+/* =============== Hero Section ================= */
+.blur-leftCorner {
+  background-color: rgb(245, 16, 245);
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 8rem;
+  border-radius: 50%;
+  filter: blur(12rem);
+}
+
+.blur-rightCorner {
+  background-color: rgb(245, 16, 245);
+  top: 0;
+  right: 0;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  filter: blur(20rem);
+}
+
+.blur-bottomCorner {
+  background-color: rgb(245, 16, 245);
+  bottom: 0;
+  left: 20rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  filter: blur(20rem);
+}

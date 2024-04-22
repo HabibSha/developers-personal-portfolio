@@ -1,0 +1,43 @@
+.bg-gradient {
+  background: linear-gradient(to right, #e855de2a 0%, #5300ee34 100%);
+}
+
+.blur-effect {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: rgb(245, 16, 245);
+  filter: blur(1.8rem);
+}
+
+.animate-pendulum {
+  animation: animatePendulum infinite 4s;
+}
+
+@keyframes animatePendulum {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-scale {
+  animation: animateScale infinite 4s;
+}
+
+@keyframes animateScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

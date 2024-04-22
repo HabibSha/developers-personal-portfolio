@@ -17,3 +17,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.text-gradient {
+  background: linear-gradient(to right, #e855de 0%, #5400ee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
