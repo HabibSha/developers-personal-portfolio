@@ -1,3 +1,7 @@
+.height {
+  height: auto;
+}
+
 .bg-gradient {
   background: linear-gradient(to right, #e855de2a 0%, #5300ee34 100%);
 }

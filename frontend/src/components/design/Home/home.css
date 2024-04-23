@@ -1,13 +1,16 @@
-.bg-gradient {
-  background: linear-gradient(to right, #e855de2a 0%, #5300ee34 100%);
-}
-
 .blur-effect {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   background-color: rgb(245, 16, 245);
   filter: blur(1.8rem);
+}
+
+.blur-dot {
+  width: 4px;
+  height: 4px;
+  background-color: rgb(245, 16, 245);
+  filter: blur(3px);
 }
 
 .animate-pendulum {

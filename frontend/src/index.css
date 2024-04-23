@@ -18,6 +18,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 .text-gradient {
   background: linear-gradient(to right, #e855de 0%, #5400ee 100%);
   -webkit-background-clip: text;

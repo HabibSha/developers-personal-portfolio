@@ -28,3 +28,54 @@
   border-radius: 50%;
   filter: blur(20rem);
 }
+
+/* =========== Responsive Blur ============= */
+/* xl: 1280px */
+@media (max-width: 1280px) {
+  .blur-leftCorner {
+    width: 12rem;
+    height: 8rem;
+    filter: blur(10rem);
+  }
+
+  .blur-rightCorner {
+    width: 16rem;
+    height: 16rem;
+    filter: blur(16rem);
+  }
+
+  .blur-bottomCorner {
+    width: 11rem;
+    height: 11rem;
+    filter: blur(16rem);
+  }
+}
+
+/* lg: 1024px */
+@media (min-width: 1024px) {
+}
+
+/* md: 768px */
+@media (min-width: 768px) {
+}
+
+/* xl: 640px */
+@media (max-width: 640px) {
+  .blur-leftCorner {
+    width: 5rem;
+    height: 4rem;
+    filter: blur(6rem);
+  }
+
+  .blur-rightCorner {
+    width: 10rem;
+    height: 10rem;
+    filter: blur(10rem);
+  }
+
+  .blur-bottomCorner {
+    width: 11rem;
+    height: 11rem;
+    filter: blur(16rem);
+  }
+}

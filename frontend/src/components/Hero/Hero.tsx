@@ -1,14 +1,14 @@
 import { Typewriter } from "react-simple-typewriter";
 
 import "./hero.css";
-// import { BackgroundEl } from "../design/Hero";
+import { BackgroundEl } from "../design/Home/Home";
 import heroA from "../../assets/hero/heroA.svg";
 // import heroB from "../../assets/hero/heroB.svg";
 // import heroD from "../../assets/hero/heroD.svg";
 
 const Hero = () => {
   return (
-    <section className="relative h-[95vh] md:h-[110vh] lg:h-[80vh] py-[5rem] lg:py-[10rem] grid grid-cols-1 gap-5 lg:grid-cols-2">
+    <section className="relative height py-[5rem] lg:min-h-[85vh] lg:py-[10rem] grid grid-cols-1 gap-5 lg:grid-cols-2">
       <article>
         <p className="text-lg text-colorOffWhite select-none inline px-4 py-2 rounded-lg bg-gradient">
           Welcome to my Portfolio
@@ -19,9 +19,9 @@ const Hero = () => {
         <h1 className="h1 text-gradient">
           <Typewriter
             words={[
-              "MERN Stack Web Developer",
+              "MERN Stack Developer",
               "Responsive Frontend Developer",
-              "Backend Website Developer",
+              "Backend Web Developer",
             ]}
             loop={Infinity}
             typeSpeed={50}
@@ -42,7 +42,7 @@ const Hero = () => {
         </button>
       </article>
       <article className="relative flex items-center justify-center">
-        {/* <BackgroundEl /> */}
+        <BackgroundEl />
         <img
           src={heroA}
           alt="HeroA"
