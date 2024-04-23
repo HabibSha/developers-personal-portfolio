@@ -2,6 +2,7 @@ import "./home.css";
 import Hero from "../../components/Hero/Hero";
 import styles from "../../style";
 import { BackgroundDot } from "../../components/design/Home/Home";
+import Profession from "../../components/Profession/Profession";
 
 const Home: React.FC = () => {
   return (
@@ -17,7 +18,9 @@ const Home: React.FC = () => {
           <Hero />
         </div>
       </article>
-      <article></article>
+      <article>
+        <Profession />
+      </article>
     </section>
   );
 };
