@@ -13,7 +13,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import "./footer.css";
 import styles, { footerSocial } from "../../style";
 import react from "../../assets/react.svg";
-import tailwind from "../../assets/tailwind-css.svg";
 import tailwindP from "../../assets/tailwindP.svg";
 
 const Footer: React.FC = () => {
@@ -50,7 +49,6 @@ const Footer: React.FC = () => {
             alt="React"
             className="w-[5rem] animate-spin-infinite"
           />
-          <img src={tailwind} alt="" className="w-[5rem] animate-pulse" />
           <img src={tailwindP} alt="" className="w-16" />
           {/* <Player
             autoplay

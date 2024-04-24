@@ -2,14 +2,12 @@ import { Typewriter } from "react-simple-typewriter";
 
 import "./hero.css";
 import { BackgroundEl } from "../design/Home/Home";
-import heroA from "../../assets/hero/heroA.svg";
-// import heroB from "../../assets/hero/heroB.svg";
-// import heroD from "../../assets/hero/heroD.svg";
+import heroA from "../../assets/home/heroA.svg";
 
 const Hero = () => {
   return (
     <section className="relative height py-[5rem] lg:min-h-[85vh] lg:py-[10rem] grid grid-cols-1 gap-5 lg:grid-cols-2">
-      <article>
+      <article className="text-center lg:text-start">
         <p className="text-lg text-colorOffWhite select-none inline px-4 py-2 rounded-lg bg-gradient">
           Welcome to my Portfolio
         </p>

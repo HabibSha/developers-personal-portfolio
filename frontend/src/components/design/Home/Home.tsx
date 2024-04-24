@@ -11,7 +11,7 @@ import reactP from "../../../assets/reactP.svg";
 import tailwindP from "../../../assets/tailwindP.svg";
 import javasriptP from "../../../assets/javascriptP.svg";
 import cssP from "../../../assets/cssP.svg";
-import dot from "../../../assets/hero/dot.svg";
+import dot from "../../../assets/home/dot.svg";
 
 export const BackgroundEl: React.FC = () => {
   const [mounted, setMounted] = useState(false);
