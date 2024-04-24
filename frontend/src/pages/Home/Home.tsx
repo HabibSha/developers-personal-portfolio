@@ -1,7 +1,10 @@
 import "./home.css";
 import Hero from "../../components/Hero/Hero";
 import styles from "../../style";
-import { BackgroundDot } from "../../components/design/Home/Home";
+import {
+  BackgroundBox,
+  BackgroundDot,
+} from "../../components/design/Home/Home";
 import Profession from "../../components/Profession/Profession";
 
 const Home: React.FC = () => {
@@ -18,8 +21,19 @@ const Home: React.FC = () => {
           <Hero />
         </div>
       </article>
-      <article className={`container mx-auto ${styles.paddingX}`}>
-        <Profession />
+      <article className="relative">
+        <div className="blur-leftCorner absolute"></div>
+        <div className="blur-leftMiddle absolute"></div>
+        <div className="blur-leftBottom absolute"></div>
+        <div className="blur-topMiddle absolute"></div>
+        <div className="blur-rightMiddle absolute"></div>
+        <div className="blur-rightBottom absolute"></div>
+        <div>
+          <BackgroundBox />
+        </div>
+        <div className={`container mx-auto ${styles.paddingX}`}>
+          <Profession />
+        </div>
       </article>
     </section>
   );

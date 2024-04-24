@@ -9,6 +9,26 @@
   filter: blur(12rem);
 }
 
+.blur-leftMiddle {
+  background-color: rgb(245, 16, 245);
+  top: 40%;
+  left: 3%;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  filter: blur(15rem);
+}
+
+.blur-leftBottom {
+  background-color: rgb(245, 16, 245);
+  bottom: 5%;
+  left: 10%;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  filter: blur(14rem);
+}
+
 .blur-rightCorner {
   background-color: rgb(245, 16, 245);
   top: 0;
@@ -29,24 +49,86 @@
   filter: blur(20rem);
 }
 
+.blur-topMiddle {
+  background-color: rgb(245, 16, 245);
+  top: 50%;
+  left: 50%;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  filter: blur(15rem);
+}
+
+.blur-rightMiddle {
+  background-color: rgb(245, 16, 245);
+  top: 20%;
+  right: 5%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  filter: blur(20rem);
+}
+
+.blur-rightBottom {
+  background-color: rgb(245, 16, 245);
+  bottom: 5%;
+  right: 10%;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  filter: blur(20rem);
+}
+
 /* =========== Responsive Blur ============= */
 /* xl: 1280px */
 @media (max-width: 1280px) {
   .blur-leftCorner {
     width: 12rem;
     height: 8rem;
-    filter: blur(10rem);
+    filter: blur(12rem);
+  }
+
+  .blur-leftMiddle {
+    width: 12rem;
+    height: 12rem;
+    filter: blur(14rem);
+  }
+
+  .blur-leftBottom {
+    width: 12rem;
+    height: 12rem;
+    filter: blur(14rem);
   }
 
   .blur-rightCorner {
     width: 16rem;
     height: 16rem;
-    filter: blur(16rem);
+    filter: blur(18rem);
   }
 
   .blur-bottomCorner {
     width: 11rem;
     height: 11rem;
+    filter: blur(16rem);
+  }
+
+  .blur-topMiddle {
+    width: 11rem;
+    height: 11rem;
+    filter: blur(12rem);
+  }
+
+  .blur-rightMiddle {
+    width: 16rem;
+    height: 16rem;
+    filter: blur(18rem);
+  }
+
+  .blur-rightBottom {
+    width: 14rem;
+    height: 14rem;
+    bottom: 20%;
+    right: 10%;
     filter: blur(16rem);
   }
 }
@@ -62,9 +144,21 @@
 /* xl: 640px */
 @media (max-width: 640px) {
   .blur-leftCorner {
-    width: 5rem;
-    height: 4rem;
-    filter: blur(6rem);
+    width: 6rem;
+    height: 6rem;
+    filter: blur(8rem);
+  }
+
+  .blur-leftMiddle {
+    width: 8rem;
+    height: 8rem;
+    filter: blur(9rem);
+  }
+
+  .blur-leftBottom {
+    width: 6rem;
+    height: 6rem;
+    filter: blur(7rem);
   }
 
   .blur-rightCorner {
@@ -77,5 +171,25 @@
     width: 11rem;
     height: 11rem;
     filter: blur(16rem);
+  }
+
+  .blur-topMiddle {
+    width: 10rem;
+    height: 10rem;
+    filter: blur(10rem);
+  }
+
+  .blur-rightMiddle {
+    width: 12rem;
+    height: 12rem;
+    filter: blur(14rem);
+  }
+
+  .blur-rightBottom {
+    width: 10rem;
+    height: 10rem;
+    bottom: 18%;
+    right: 10%;
+    filter: blur(10rem);
   }
 }

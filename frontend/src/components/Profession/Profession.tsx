@@ -1,10 +1,8 @@
 import MernStack from "../MernStack/MernStack";
-import { mernSocials } from "../Constants";
+import { backendSocials, frontendSocials, mernSocials } from "../Constants";
 import "./profession.css";
-
-// import heroC from "../../assets/home/heroC.svg";
-// import heroD from "../../assets/home/heroD.svg";
-// import javascript from "../../assets/social/javascriptGrad.svg";
+import FrontEnd from "../FrontEnd/FrontEnd";
+import BackEnd from "../BackEnd/BackEnd";
 
 const Profession: React.FC = () => {
   return (
@@ -14,8 +12,14 @@ const Profession: React.FC = () => {
         <h2 className="h1 mt-1 mb-4 font-bold">What I do_?</h2>
         <span className="gradient-line"></span>
       </div>
-      <article className="relative">
+      <article>
         <MernStack mernSocials={mernSocials} />
+      </article>
+      <article>
+        <FrontEnd frontendSocials={frontendSocials} />
+      </article>
+      <article>
+        <BackEnd backendSocials={backendSocials} />
       </article>
     </section>
   );

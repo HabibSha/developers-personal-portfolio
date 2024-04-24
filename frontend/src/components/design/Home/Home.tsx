@@ -178,3 +178,39 @@ export const BackgroundDot: React.FC = () => {
     </section>
   );
 };
+
+export const BackgroundBox: React.FC = () => {
+  const scrollParallaxRef = useRef<ScrollParallaxHandle | null>(null);
+
+  useEffect(() => {
+    scrollParallaxRef.current?.updateValues();
+  }, []);
+
+  return (
+    <section>
+      <ScrollParallax
+        strength={0.07}
+        enableOnTouchDevice
+        isAbsolutelyPositioned
+        ref={scrollParallaxRef}
+      >
+        <div>
+          <div className="blur-box absolute left-[5%] top-[25%] translate-y-2 lg:translate-x-6 lg:translate-y-6"></div>
+          <img
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/3-d-cube-11355607-9113600.png"
+            alt=""
+            className="w-[3rem] lg:w-[5rem] animate-pendulum absolute left-[5%] top-[25%]"
+          />
+        </div>
+        <div>
+          <div className="blur-boxB absolute right-[9%] top-[8.5%]"></div>
+          <img
+            src="https://cdn3d.iconscout.com/3d/premium/thumb/3-d-cube-11355161-9113627.png"
+            alt=""
+            className="w-[3rem] lg:w-[5rem] animate-pendulum absolute right-[8%] top-[7.7%]"
+          />
+        </div>
+      </ScrollParallax>
+    </section>
+  );
+};

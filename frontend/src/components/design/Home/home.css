@@ -13,6 +13,22 @@
   filter: blur(3px);
 }
 
+.blur-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgb(245, 16, 245);
+  filter: blur(2.6rem);
+}
+
+.blur-boxB {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgb(16, 172, 245);
+  filter: blur(2.6rem);
+}
+
 .animate-pendulum {
   animation: animatePendulum infinite 4s;
 }
@@ -42,5 +58,20 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* =========== Responsive Blur ============= */
+/* xl: 1280px */
+@media (max-width: 1280px) {
+  .blur-box {
+    width: 1.8rem;
+    height: 1.8rem;
+    filter: blur(2rem);
+  }
+  .blur-boxB {
+    width: 1.8rem;
+    height: 1.8rem;
+    filter: blur(2rem);
   }
 }
