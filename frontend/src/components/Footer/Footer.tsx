@@ -12,8 +12,6 @@ import { FaXTwitter } from "react-icons/fa6";
 
 import "./footer.css";
 import styles, { footerSocial } from "../../style";
-import react from "../../assets/react.svg";
-import tailwindP from "../../assets/tailwindP.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -44,21 +42,13 @@ const Footer: React.FC = () => {
           </div>
         </article>
         <article className={`${styles.flexCenter}`}>
-          <img
-            src={react}
-            alt="React"
-            className="w-[5rem] animate-spin-infinite"
-          />
-          <img src={tailwindP} alt="" className="w-16" />
           {/* <Player
             autoplay
             loop
             src={heroD}
             style={{ height: "300px", width: "300px" }}
           ></Player> */}
-          <p className=" absolute bottom-2 text-slate-300 text-[14px]">
-            Copyright &copy; 2024 | All right reserve.
-          </p>
+          <p className="absolute bottom-2">Made with &#10084; by Habib Shah</p>
         </article>
       </footer>
     </section>

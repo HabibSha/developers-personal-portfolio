@@ -30,7 +30,7 @@ const BackEnd: React.FC<Props> = ({ backendSocials }) => {
         </div>
         <div className="pt-[10%] lg:pt-[28%] order-1 lg:order-2">
           <h2 className="h2 text-gradient mb-8">
-            Backend Tools | UI/UX design | Cloud Database
+            Backend Tools | Cloud Infra-Architecture | UI/UX design
           </h2>
           <div className="flex items-center gap-6 justify-center lg:justify-start lg:px-[2rem] ">
             {backendSocials.map((backendSocial) => {

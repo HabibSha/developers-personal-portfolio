@@ -1,0 +1,11 @@
+.bg-gradientR {
+  background: linear-gradient(to right, #5400ee 15%, #e855de 100%);
+}
+
+.bg-glassEffect {
+  background: rgba(84, 0, 238, 0.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(84, 0, 238, 0.14);
+}

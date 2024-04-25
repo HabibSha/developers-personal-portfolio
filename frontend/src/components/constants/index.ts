@@ -13,26 +13,35 @@ import figma from "../../assets/social/figma.svg";
 import aws from "../../assets/social/aws.svg";
 import github from "../../assets/social/github.svg";
 
+import hackerrank from "../../assets/website/hackerrank.svg";
+import leetcode from "../../assets/website/leetcode.svg";
+
 export const navLinks = [
   {
-    id: "/",
+    id: "1",
+    link: "/",
     title: "Home",
   },
+
   {
-    id: "projects",
-    title: "Projects",
-  },
-  {
-    id: "education",
+    id: "2",
+    link: "education",
     title: "Education",
   },
   {
-    id: "about",
-    title: "About",
+    id: "3",
+    link: "projects",
+    title: "Projects",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "4",
+    link: "experience",
+    title: "Experience",
+  },
+  {
+    id: "5",
+    link: "contact-me",
+    title: "Contact Me",
   },
 ];
 
@@ -60,4 +69,19 @@ export const backendSocials = [
   { id: "4", title: "Figma", icon: figma },
   { id: "5", title: "Git", icon: git },
   { id: "6", title: "GitHub", icon: github },
+];
+
+export const educationWebLinks = [
+  {
+    id: "1",
+    title: "HackerRank",
+    link: "https://www.hackerrank.com/profile/Habib_Shah",
+    icon: hackerrank,
+  },
+  {
+    id: "2",
+    title: "LeetCode",
+    link: "https://leetcode.com/habibshahalahi7424/",
+    icon: leetcode,
+  },
 ];

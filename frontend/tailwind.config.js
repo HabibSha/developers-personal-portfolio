@@ -48,13 +48,15 @@ export default {
           "@apply text-[2rem] leading-normal md:text-[2.5rem]": {},
         },
         ".h4": {
-          "@apply text-[2rem] leading-normal": {},
+          "@apply text-[1.45rem] leading-normal lg:text-[2rem]": {},
         },
         ".h5": {
-          "@apply text-2xl leading-normal": {},
+          "@apply text-[1.15rem] leading-normal md:text-[1.285rem] lg:text-[1.575rem]":
+            {},
         },
         ".h6": {
-          "@apply font-semibold text-lg leading-8": {},
+          "@apply font-[500] text-[.885rem] leading-normal md:text-[1rem] lg:text-[1.2rem]":
+            {},
         },
         ".body-1": {
           "@apply text-[0.895rem] leading-[1.4rem] md:text-[.975rem] md:leading-[1.5rem] xl:text-[1rem] xl:leading-[1.65]":

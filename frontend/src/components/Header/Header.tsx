@@ -8,6 +8,7 @@ import styles from "../../style";
 
 type NavLink = {
   id: string;
+  link: string;
   title: string;
 };
 type HeaderProps = {
@@ -37,11 +38,11 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
         <div className="text-2xl font-bold">Portfolio</div>
         <ul className={`${styles.flexBetween} hidden md:flex`}>
           {navLinks.map((navLink, index) => {
-            const { id, title } = navLink;
+            const { id, link, title } = navLink;
             return (
               <li key={id} className={`${styles.flexBetween} gap-4`}>
                 <NavLink
-                  to={id}
+                  to={link}
                   className={`${
                     index === navLinks.length - 1
                       ? "mr-0"
@@ -75,11 +76,11 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
         >
           <ul className={`h-full flex flex-col items-center`}>
             {navLinks.map((navLink, index) => {
-              const { id, title } = navLink;
+              const { id, link, title } = navLink;
               return (
                 <li key={id} className={`${styles.flexBetween}`}>
                   <NavLink
-                    to={id}
+                    to={link}
                     className={`${
                       index === navLinks.length - 1 ? "mb-0" : "mb-[3.5rem]"
                     }`}
