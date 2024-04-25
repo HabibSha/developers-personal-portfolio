@@ -33,7 +33,7 @@ const EducationHero: React.FC<Props> = ({ educationWebLinks }) => {
         <img src={educationA} alt="Education" className="w-[80%]" />
       </article>
       <article className="text-center lg:pt-[5rem] order-1 lg:order-2">
-        <h2 className="h2 text-gradient">Education</h2>
+        <h2 className="h2 text-gradient font-[500]">Education</h2>
         <h4 className="h4 mt-3">Basic Qualification and Certifications</h4>
         <div className={`${styles.flexCenter} gap-6 lg:px-[2rem] pt-[2rem]`}>
           {educationWebLinks.map((eduWebLink) => {
