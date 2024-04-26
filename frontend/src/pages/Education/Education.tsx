@@ -1,5 +1,5 @@
 import Certification from "../../components/Certification/Certification";
-import { educationWebLinks } from "../../components/Constants";
+import { certifications, educationWebLinks } from "../../components/Constants";
 import EduGraduation from "../../components/EduGraduation/EduGraduation";
 import EducationHero from "../../components/EducationHero/EducationHero";
 import styles from "../../style";
@@ -19,7 +19,7 @@ const Education: React.FC = () => {
       </article>
       <article className="relative border-b-[1px] h-auto">
         <div className={`${styles.paddingX} container mx-auto`}>
-          <Certification />
+          <Certification certifications={certifications} />
         </div>
       </article>
     </section>

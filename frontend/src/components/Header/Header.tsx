@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
                     index === navLinks.length - 1
                       ? "mr-0"
                       : "mr-[2.8rem] lg:mr-[4rem]"
-                  }`}
+                  } hover:text-colorPink duration-300`}
                 >
                   {title}
                 </NavLink>
@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
                     to={link}
                     className={`${
                       index === navLinks.length - 1 ? "mb-0" : "mb-[3.5rem]"
-                    }`}
+                    } hover:text-gradient`}
                   >
                     {title}
                   </NavLink>

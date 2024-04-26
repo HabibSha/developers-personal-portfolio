@@ -39,7 +39,7 @@ const EducationHero: React.FC<Props> = ({ educationWebLinks }) => {
           {educationWebLinks.map((eduWebLink) => {
             const { id, title, link, icon } = eduWebLink;
             return (
-              <Link to={link} id={id} className="relative">
+              <Link to={link} key={id} target="_blank" className="relative">
                 <img
                   src={icon}
                   alt={title}

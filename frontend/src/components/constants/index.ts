@@ -17,7 +17,7 @@ import hackerrank from "../../assets/website/hackerrank.svg";
 import leetcode from "../../assets/website/leetcode.svg";
 
 import greatlearning from "../../assets/education/greatlearning.png";
-import simplylearn from "../../assets/education/simplylearn.svg";
+import simplylearn from "../../assets/education/simplylearn.png";
 
 export const navLinks = [
   {

@@ -29,7 +29,7 @@ const FrontEnd: React.FC<Props> = ({ frontendSocials }) => {
           <h2 className="h2 text-gradient mb-8">
             Responsive Frontend Development
           </h2>
-          <div className="flex items-center gap-6 justify-center lg:justify-start lg:px-[2rem] ">
+          <div className="flex items-center gap-3 lg:gap-6 justify-center lg:justify-start lg:px-[2rem] ">
             {frontendSocials.map((frontendSocial) => {
               const { id, title, icon } = frontendSocial;
               return (
