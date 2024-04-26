@@ -16,6 +16,9 @@ import github from "../../assets/social/github.svg";
 import hackerrank from "../../assets/website/hackerrank.svg";
 import leetcode from "../../assets/website/leetcode.svg";
 
+import greatlearning from "../../assets/education/greatlearning.png";
+import simplylearn from "../../assets/education/simplylearn.svg";
+
 export const navLinks = [
   {
     id: "1",
@@ -83,5 +86,32 @@ export const educationWebLinks = [
     title: "LeetCode",
     link: "https://leetcode.com/habibshahalahi7424/",
     icon: leetcode,
+  },
+];
+
+export const certifications = [
+  {
+    id: "1",
+    title: "MERN Stack Fundamentals",
+    alt: "Great Learning",
+    name: "",
+    link: "https://olympus.mygreatlearning.com/courses/105615/certificate",
+    image: greatlearning,
+  },
+  {
+    id: "2",
+    title: "JavaScript for Beginners",
+    alt: "Simply Learn",
+    name: "",
+    link: "https://lms.simplilearn.com/courses/4212/JavaScript-for-Beginners/certificate/download-skillup",
+    image: simplylearn,
+  },
+  {
+    id: "3",
+    title: "JavaScript Specialist",
+    alt: "Great Learning",
+    name: "",
+    link: "https://olympus.mygreatlearning.com/courses/105615/certificate",
+    image: greatlearning,
   },
 ];

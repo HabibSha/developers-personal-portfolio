@@ -1,0 +1,38 @@
+/* absolute w-full h-full top-0 flex justify-center items-center bg-black  */
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.4s ease;
+}
+
+.hover-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.from-upper {
+  opacity: 0;
+}
+
+.hover-overlay:hover .from-upper {
+  animation: animateUpper 0.3s ease-in forwards;
+}
+
+@keyframes animateUpper {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
