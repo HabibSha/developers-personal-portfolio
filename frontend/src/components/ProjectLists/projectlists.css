@@ -1,0 +1,15 @@
+.hover-scroll {
+  transition: transform 2s ease;
+}
+
+.hover-scroll:hover {
+  transform: translateY(-30rem);
+}
+
+.hover-scrollB {
+  transition: transform 3s ease;
+}
+
+.hover-scrollB:hover {
+  transform: translateY(-87%);
+}
