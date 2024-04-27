@@ -9,7 +9,7 @@ const styles = {
   paddingX: "px-6 sm:px-12",
   paddingY: "py-6 sm:py-12",
 
-  borderBottom: "border-b-[1px] border-slate-600",
+  borderBottom: "border-b-[.5px] border-colorIndigo",
 };
 
 export const footerSocial = {

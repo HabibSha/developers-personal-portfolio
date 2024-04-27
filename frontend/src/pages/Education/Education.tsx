@@ -6,18 +6,18 @@ import styles from "../../style";
 
 const Education: React.FC = () => {
   return (
-    <section className="border-b-[1px]">
-      <article className="relative border-b-[1px] h-auto pt-[9vh]">
+    <section>
+      <article className="relative h-auto pt-[9vh]">
         <div className={`${styles.paddingX} container mx-auto`}>
           <EducationHero educationWebLinks={educationWebLinks} />
         </div>
       </article>
-      <article className="relative border-b-[1px] h-auto">
+      <article className="relative h-auto">
         <div className={`${styles.paddingX} container mx-auto`}>
           <EduGraduation />
         </div>
       </article>
-      <article className="relative border-b-[1px] h-auto">
+      <article className="relative h-auto">
         <div className={`${styles.paddingX} container mx-auto`}>
           <Certification certifications={certifications} />
         </div>

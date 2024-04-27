@@ -1,3 +1,4 @@
+import { projectLists } from "../../components/Constants";
 import ProjectHero from "../../components/ProjectHero/ProjectHero";
 import ProjectLists from "../../components/ProjectLists/ProjectLists";
 import styles from "../../style";
@@ -12,7 +13,7 @@ const Projects = () => {
       </article>
       <article className="relative border-b-[1px] h-auto">
         <div className={`container mx-auto ${styles.paddingX}`}>
-          <ProjectLists />
+          <ProjectLists projectLists={projectLists} />
         </div>
       </article>
     </section>

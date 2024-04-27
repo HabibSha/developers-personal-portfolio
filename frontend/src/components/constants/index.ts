@@ -6,7 +6,9 @@ import mongodb from "../../assets/social/mongodb.svg";
 import npm from "../../assets/social/npm.svg";
 import html5 from "../../assets/social/html5.svg";
 import css from "../../assets/social/css.svg";
-import javascript from "../../assets/social/javascriptGrad.svg";
+import javascript from "../../assets/social/javascript.svg";
+import typescript from "../../assets/social/typescript.svg";
+import redux from "../../assets/social/redux.svg";
 import git from "../../assets/social/git.svg";
 import firebase from "../../assets/social/firebase.svg";
 import figma from "../../assets/social/figma.svg";
@@ -18,6 +20,11 @@ import leetcode from "../../assets/website/leetcode.svg";
 
 import greatlearning from "../../assets/education/greatlearning.png";
 import simplylearn from "../../assets/education/simplylearn.png";
+
+import developers from "../../assets/projects/developers.png";
+import cyberez from "../../assets/projects/cyberez.png";
+import redonion from "../../assets/projects/redonion.png";
+import programminghero from "../../assets/projects/programminghero.png";
 
 export const navLinks = [
   {
@@ -113,5 +120,55 @@ export const certifications = [
     name: "",
     link: "https://olympus.mygreatlearning.com/courses/105615/certificate",
     image: greatlearning,
+  },
+];
+
+export const projectLists = [
+  {
+    id: "1",
+    title: "Portfolio - A Portfolio Website for Web Developers",
+    image: developers,
+    projectIcons: [
+      { id: "1", title: "ReactJS", icon: react },
+      { id: "2", title: "JavaScript", icon: javascript },
+      { id: "3", title: "TypeScript", icon: typescript },
+      { id: "4", title: "TailwindCSS", icon: tailwind },
+    ],
+    // alt: "Portfolio",
+  },
+  {
+    id: "2",
+    title: "CyberEz - A Programming Language Course Website",
+    image: cyberez,
+    projectIcons: [
+      { id: "1", title: "HTML5", icon: html5 },
+      { id: "2", title: "CSS3", icon: css },
+      { id: "3", title: "JavaScript", icon: javascript },
+    ],
+    // alt: "CyberEz",
+  },
+  {
+    id: "3",
+    title: "RedOnion - A E-commerce Application for Foods Item",
+    image: redonion,
+    projectIcons: [
+      { id: "1", title: "ReactJS", icon: react },
+      { id: "2", title: "Redux", icon: redux },
+      { id: "3", title: "TailwindCSS", icon: tailwind },
+      { id: "4", title: "Firebase", icon: firebase },
+    ],
+    // alt: "RedOnion",
+  },
+  {
+    id: "4",
+    title: "Dummy - For Testing Purpose",
+    image: programminghero,
+    projectIcons: [
+      { id: "1", title: "ReactJS", icon: react },
+      { id: "2", title: "JavaScript", icon: javascript },
+      { id: "3", title: "TypeScript", icon: typescript },
+      { id: "4", title: "TailwindCSS", icon: tailwind },
+    ],
+    // alt: "ProgrammingHero",
   },
 ];
