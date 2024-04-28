@@ -4,6 +4,9 @@ import Layout from "../layouts/Layout";
 import Home from "../pages/Home/Home";
 import Projects from "../pages/Project/Projects";
 import Education from "../pages/Education/Education";
+import ContactMe from "../pages/Contact/ContactMe";
+import Experience from "../pages/Experience/Experience";
+import Error from "../pages/Error/Error";
 
 const Routers = () => {
   return (
@@ -13,6 +16,9 @@ const Routers = () => {
           <Route index element={<Home />} />
           <Route path="education" element={<Education />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="contact" element={<ContactMe />} />
+          <Route path="*" element={<Error />} />
         </Route>
       </Routes>
     </>
