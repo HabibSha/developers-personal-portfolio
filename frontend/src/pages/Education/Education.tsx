@@ -8,16 +8,25 @@ const Education: React.FC = () => {
   return (
     <section>
       <article className="relative h-auto pt-[9vh]">
+        <div className="blur-leftCorner absolute"></div>
+        <div className="blur-rightCorner absolute"></div>
+        <div className="blur-bottomCorner absolute"></div>
         <div className={`${styles.paddingX} container mx-auto`}>
           <EducationHero educationWebLinks={educationWebLinks} />
         </div>
       </article>
       <article className="relative h-auto">
+        <div className="blur-leftCorner absolute"></div>
+        <div className="blur-leftMiddle absolute"></div>
+        <div className="blur-topMiddle absolute"></div>
+        <div className="blur-rightMiddle absolute"></div>
         <div className={`${styles.paddingX} container mx-auto`}>
           <EduGraduation />
         </div>
       </article>
       <article className="relative h-auto">
+        <div className="blur-leftBottom absolute"></div>
+        <div className="blur-rightBottom absolute"></div>
         <div className={`${styles.paddingX} container mx-auto`}>
           <Certification certifications={certifications} />
         </div>

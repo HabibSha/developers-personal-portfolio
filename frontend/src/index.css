@@ -21,6 +21,7 @@
 body,
 html {
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 
 .text-gradient {
@@ -56,4 +57,11 @@ html {
 
 .btnPrimary:hover::before {
   opacity: 1;
+}
+
+.backgroundGlossy {
+  background: linear-gradient(to right, #f800e82a 20%, #5a03fc2c 100%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5rem);
+  -webkit-backdrop-filter: blur(9.5rem);
 }

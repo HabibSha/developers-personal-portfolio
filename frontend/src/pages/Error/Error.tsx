@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Link } from "react-router-dom";
 
 import styles from "../../style";
@@ -9,6 +7,9 @@ const Error = () => {
   return (
     <section>
       <article className="relative h-screen pt-[9vh]">
+        <div className="blur-leftCorner absolute"></div>
+        <div className="blur-rightCorner absolute"></div>
+        <div className="blur-bottomCorner absolute"></div>
         <div className={`container mx-auto ${styles.paddingX}`}>
           <div className="pt-6">
             <Link
