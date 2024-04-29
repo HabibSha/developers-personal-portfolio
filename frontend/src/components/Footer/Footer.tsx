@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
             className={`flex items-start sm:items-center sm:justify-between ${styles.borderBottom} flex-col sm:flex-row pb-[2rem]`}
           >
             <div className="text-2xl font-bold mb-6 sm:mb-0">Portfolio</div>
-            <div className="flex items-center gap-2 text-xl">
+            <div className="flex items-center gap-3 text-xl">
               <div className={`${footerSocial.socialLinks} bg-slate-800`}>
                 <FaGithub />
               </div>
