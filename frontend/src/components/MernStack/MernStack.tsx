@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { BsLightningFill } from "react-icons/bs";
+
 import "./mern.css";
 import heroB from "../../assets/home/heroB.svg";
 
@@ -9,11 +11,18 @@ interface MernSocial {
   icon: string;
 }
 
-interface Props {
-  mernSocials: MernSocial[];
+interface MernInfo {
+  id: string;
+  title: string;
+  icon: string;
 }
 
-const MernStack: React.FC<Props> = ({ mernSocials }) => {
+interface Props {
+  mernSocials: MernSocial[];
+  mernInfos: MernInfo[];
+}
+
+const MernStack: React.FC<Props> = ({ mernSocials, mernInfos }) => {
   const [hoverState, setHoverState] = useState<{ [key: string]: boolean }>({});
 
   const handleMouseEnter = (id: string) => {
@@ -54,17 +63,18 @@ const MernStack: React.FC<Props> = ({ mernSocials }) => {
               );
             })}
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            illum necessitatibus nihil officiis voluptatibus iure? Vitae
-            incidunt laboriosam quidem ipsa similique aliquam atque magnam
-            exercitationem? Sint error voluptate fugit eveniet?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-            dolore expedita reprehenderit doloremque consectetur est debitis
-            laboriosam assumenda molestias tenetur?
-          </p>
+          {mernInfos.map((mern) => {
+            const { id, title } = mern;
+            return (
+              <div key={id} className="flex gap-3 mb-4">
+                <div className="mt-[6px] lg:mt-2">
+                  <BsLightningFill className="text-colorPink text-[19px]" />
+                </div>
+                <p className="body-1 text-start">{title}</p>
+              </div>
+            );
+          })}
+
           {/* <img
             src="https://cdn3d.iconscout.com/3d/premium/thumb/3-d-cube-11355607-9113600.png"
             alt=""

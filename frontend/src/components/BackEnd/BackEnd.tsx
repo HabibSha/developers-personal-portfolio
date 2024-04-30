@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { BsLightningFill } from "react-icons/bs";
+
 import heroC from "../../assets/home/heroC.svg";
 
 interface backendSocial {
@@ -8,11 +10,18 @@ interface backendSocial {
   icon: string;
 }
 
-interface Props {
-  backendSocials: backendSocial[];
+interface backendInfo {
+  id: string;
+  title: string;
+  icon: string;
 }
 
-const BackEnd: React.FC<Props> = ({ backendSocials }) => {
+interface Props {
+  backendSocials: backendSocial[];
+  backendInfos: backendInfo[];
+}
+
+const BackEnd: React.FC<Props> = ({ backendSocials, backendInfos }) => {
   const [hoverState, setHoverState] = useState<{ [key: string]: boolean }>({});
 
   const handleMouseEnter = (id: string) => {
@@ -55,17 +64,17 @@ const BackEnd: React.FC<Props> = ({ backendSocials }) => {
               );
             })}
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            illum necessitatibus nihil officiis voluptatibus iure? Vitae
-            incidunt laboriosam quidem ipsa similique aliquam atque magnam
-            exercitationem? Sint error voluptate fugit eveniet?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-            dolore expedita reprehenderit doloremque consectetur est debitis
-            laboriosam assumenda molestias tenetur?
-          </p>
+          {backendInfos.map((backend) => {
+            const { id, title } = backend;
+            return (
+              <div key={id} className="flex gap-3 mb-4">
+                <div className="mt-[6px] lg:mt-2">
+                  <BsLightningFill className="text-colorPink text-[19px]" />
+                </div>
+                <p className="body-1 text-start">{title}</p>
+              </div>
+            );
+          })}
         </div>
       </article>
     </section>

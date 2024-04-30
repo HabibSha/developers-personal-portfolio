@@ -1,5 +1,12 @@
 import MernStack from "../MernStack/MernStack";
-import { backendSocials, frontendSocials, mernSocials } from "../Constants";
+import {
+  backendInfos,
+  backendSocials,
+  frontendInfos,
+  frontendSocials,
+  mernInfos,
+  mernSocials,
+} from "../Constants";
 import "./profession.css";
 import FrontEnd from "../FrontEnd/FrontEnd";
 import BackEnd from "../BackEnd/BackEnd";
@@ -13,13 +20,16 @@ const Profession: React.FC = () => {
         <span className="gradient-line"></span>
       </div>
       <article>
-        <MernStack mernSocials={mernSocials} />
+        <MernStack mernSocials={mernSocials} mernInfos={mernInfos} />
       </article>
       <article>
-        <FrontEnd frontendSocials={frontendSocials} />
+        <FrontEnd
+          frontendSocials={frontendSocials}
+          frontendinfos={frontendInfos}
+        />
       </article>
       <article>
-        <BackEnd backendSocials={backendSocials} />
+        <BackEnd backendSocials={backendSocials} backendInfos={backendInfos} />
       </article>
     </section>
   );

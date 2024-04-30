@@ -14,6 +14,7 @@ import firebase from "../../assets/social/firebase.svg";
 import figma from "../../assets/social/figma.svg";
 import aws from "../../assets/social/aws.svg";
 import github from "../../assets/social/github.svg";
+import lightning from "../../assets/home/lightning.svg";
 
 import hackerrank from "../../assets/website/hackerrank.svg";
 import leetcode from "../../assets/website/leetcode.svg";
@@ -64,12 +65,52 @@ export const mernSocials = [
   { id: "6", title: "NPM", icon: npm },
 ];
 
+export const mernInfos = [
+  {
+    id: "1",
+    title:
+      "Building responsive website and dynamic front end using React-Redux and Tailwind CSS for styling",
+    icon: lightning,
+  },
+  {
+    id: "2",
+    title:
+      "Using MongoDB Database to create CRUD Rest API for serving data back end to front end",
+    icon: lightning,
+  },
+  {
+    id: "3",
+    title: "Creating application backend in Node and Express JS",
+    icon: lightning,
+  },
+];
+
 export const frontendSocials = [
   { id: "1", title: "HTML5", icon: html5 },
   { id: "2", title: "CSS3", icon: css },
   { id: "3", title: "JavaScript", icon: javascript },
   { id: "4", title: "ReactJS", icon: react },
   { id: "5", title: "TailwindCSS", icon: tailwind },
+];
+
+export const frontendInfos = [
+  {
+    id: "1",
+    title:
+      "Building also responsive website front end using HTML, CSS and JavaScript",
+    icon: lightning,
+  },
+  {
+    id: "2",
+    title:
+      "For more accuracy, using React with TypeScript and for nesting style using SASS and Tailwind CSS (framework)",
+    icon: lightning,
+  },
+  {
+    id: "3",
+    title: "From validation with JavaScript DOM manipulation",
+    icon: lightning,
+  },
 ];
 
 export const backendSocials = [
@@ -79,6 +120,26 @@ export const backendSocials = [
   { id: "4", title: "Figma", icon: figma },
   { id: "5", title: "Git", icon: git },
   { id: "6", title: "GitHub", icon: github },
+];
+
+export const backendInfos = [
+  {
+    id: "1",
+    title: "For Version control system and Host of source code Git & GitHub",
+    icon: lightning,
+  },
+  {
+    id: "2",
+    title:
+      "Experience working on multiple cloud platforms. Hosting and maintaining website on virtual machine instances along with integration of databases",
+    icon: lightning,
+  },
+  {
+    id: "3",
+    title:
+      "Designing highly attractive user interface for mobile and web applications",
+    icon: lightning,
+  },
 ];
 
 export const educationWebLinks = [

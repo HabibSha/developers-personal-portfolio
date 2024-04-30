@@ -59,7 +59,7 @@ export default {
             {},
         },
         ".body-1": {
-          "@apply text-[0.895rem] leading-[1.4rem] md:text-[.975rem] md:leading-[1.5rem] xl:text-[1rem] xl:leading-[1.65]":
+          "@apply text-[0.895rem] leading-[1.4rem] md:text-[.975rem] md:leading-[1.5rem] xl:text-[1.1rem] xl:leading-[1.65]":
             {},
         },
         ".body-2": {

@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { BsLightningFill } from "react-icons/bs";
+
 import heroD from "../../assets/home/heroD.svg";
 
 interface frontendSocial {
@@ -8,11 +10,18 @@ interface frontendSocial {
   icon: string;
 }
 
-interface Props {
-  frontendSocials: frontendSocial[];
+interface frontendInfo {
+  id: string;
+  title: string;
+  icon: string;
 }
 
-const FrontEnd: React.FC<Props> = ({ frontendSocials }) => {
+interface Props {
+  frontendSocials: frontendSocial[];
+  frontendinfos: frontendInfo[];
+}
+
+const FrontEnd: React.FC<Props> = ({ frontendSocials, frontendinfos }) => {
   const [hoverState, setHoverState] = useState<{ [key: string]: boolean }>({});
 
   const handleMouseEnter = (id: string) => {
@@ -25,7 +34,7 @@ const FrontEnd: React.FC<Props> = ({ frontendSocials }) => {
   return (
     <section>
       <article className="grid text-center gap-0 lg:text-start lg:grid-cols-2 lg:gap-5">
-        <div className="pt-[10%] lg:pt-[28%]">
+        <div className="pt-[10%] lg:pt-[24%]">
           <h2 className="h2 text-gradient mb-8">
             Responsive Frontend Development
           </h2>
@@ -52,20 +61,20 @@ const FrontEnd: React.FC<Props> = ({ frontendSocials }) => {
               );
             })}
           </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            illum necessitatibus nihil officiis voluptatibus iure? Vitae
-            incidunt laboriosam quidem ipsa similique aliquam atque magnam
-            exercitationem? Sint error voluptate fugit eveniet?
-          </p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
-            dolore expedita reprehenderit doloremque consectetur est debitis
-            laboriosam assumenda molestias tenetur?
-          </p>
+          {frontendinfos.map((frontend) => {
+            const { id, title } = frontend;
+            return (
+              <div key={id} className="flex gap-3 mb-4">
+                <div className="mt-[6px] lg:mt-2">
+                  <BsLightningFill className="text-colorPink text-[19px]" />
+                </div>
+                <p className="body-1 text-start">{title}</p>
+              </div>
+            );
+          })}
         </div>
         <div>
-          <img src={heroD} alt="" className="max-w-[100%]" />
+          <img src={heroD} alt="FrontEnd" className="w-[100%]" />
         </div>
       </article>
     </section>

@@ -29,11 +29,11 @@ const Hero = () => {
             cursorStyle="_"
           />
         </h1>
-        <p className="body-1 mt-5 w-full md:w-[95%] lg:w-[85%] xl:w-[70%]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
-          quidem fuga dicta, assumenda rem aspernatur! amet consectetur
-          adipisicing elit. Deserunt quidem fuga dicta, assumenda rem
-          aspernatur!.
+        <p className="body-1 mt-5 w-full md:w-[95%] lg:w-[87%] xl:w-[82%]">
+          Innovative thinking is the cornerstone of my work. I constantly
+          explore new ways to amplify the reach and effectiveness of my
+          solutions, ensuring that the positive change I create can be scaled
+          and replicated to drive widespread impact.
         </p>
         <button className="mt-5 cursor-pointer ring-1 ring-colorIndigo px-3 py-1">
           Connect with me
