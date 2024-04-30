@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import {
   FaGithub,
   FaLinkedinIn,
+  FaGoogle,
   FaInstagram,
   FaFacebookF,
 } from "react-icons/fa";
@@ -21,16 +22,27 @@ const ContactHero: React.FC = () => {
         <div className="pt-[10%] lg:pt-[28%] order-1 lg:order-2 text-center">
           <h2 className="h2 text-gradient mb-3 lg:mb-5">Contact Me</h2>
           <p className="body-1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi
-            voluptas tenetur, nihil amet molestias reprehenderit obcaecati
-            accusantium et dignissimos.
+            Don't hesitate to contact me. I am available on almost every social
+            media. You can message me, I will reply within 24 hours. I can help
+            you with MERN, React, Javacript and Responsive Web Development.
           </p>
           <div className="flex items-center justify-center gap-3 text-xl py-3">
-            <div className={`${footerSocial.socialLinks} bg-slate-800`}>
+            <Link
+              to="https://github.com/HabibSha"
+              target="_blank"
+              className={`${footerSocial.socialLinks} bg-slate-900`}
+            >
               <FaGithub />
-            </div>
-            <div className={`${footerSocial.socialLinks} bg-blue-500`}>
+            </Link>
+            <Link
+              to="https://www.linkedin.com/in/habib-shah/"
+              target="_blank"
+              className={`${footerSocial.socialLinks} bg-blue-500`}
+            >
               <FaLinkedinIn />
+            </Link>
+            <div className={`${footerSocial.socialLinks} bg-orange-700`}>
+              <FaGoogle />
             </div>
             <div className={`${footerSocial.socialLinks} bg-[#fa2a69]`}>
               <FaInstagram />
@@ -38,12 +50,16 @@ const ContactHero: React.FC = () => {
             <div className={`${footerSocial.socialLinks} bg-blue-600`}>
               <FaFacebookF />
             </div>
-            <div className={`${footerSocial.socialLinks} bg-black`}>
+            <Link
+              to="https://twitter.com/HabibShah2524"
+              target="_blank"
+              className={`${footerSocial.socialLinks} bg-black`}
+            >
               <FaXTwitter />
-            </div>
+            </Link>
           </div>
           <Link to="#" target="_blank">
-            <button className="btnPrimary mt-4">See Resume</button>
+            <button className="btnPrimary mt-4">See My Resume</button>
           </Link>
         </div>
       </article>

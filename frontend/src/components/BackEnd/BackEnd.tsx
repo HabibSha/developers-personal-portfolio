@@ -48,7 +48,7 @@ const BackEnd: React.FC<Props> = ({ backendSocials, backendInfos }) => {
                 <div id={id} className="relative">
                   <img
                     src={icon}
-                    alt=""
+                    alt="Technologies"
                     className="w-10 mb-[2rem]"
                     onMouseEnter={() => handleMouseEnter(id)}
                     onMouseLeave={() => handleMouseLeave(id)}
@@ -69,7 +69,7 @@ const BackEnd: React.FC<Props> = ({ backendSocials, backendInfos }) => {
             return (
               <div key={id} className="flex gap-3 mb-4">
                 <div className="mt-[6px] lg:mt-2">
-                  <BsLightningFill className="text-colorPink text-[19px]" />
+                  <BsLightningFill className="text-colorPink text-[19px] animate-pulse" />
                 </div>
                 <p className="body-1 text-start">{title}</p>
               </div>

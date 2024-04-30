@@ -13,7 +13,7 @@ const styles = {
 };
 
 export const footerSocial = {
-  socialLinks: `w-9 h-9 ${styles.flexCenter} rounded-full cursor-pointer`,
+  socialLinks: `w-9 h-9 hover:bg-[#200249] duration-300 ${styles.flexCenter} rounded-full cursor-pointer`,
 };
 
 export default styles;

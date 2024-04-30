@@ -42,7 +42,8 @@ const Footer: React.FC = () => {
           </article>
           <article className={`${styles.flexCenter}`}>
             <p className="absolute bottom-2">
-              Made with &#10084; by Habib Shah
+              Made with <span className="text-red-700">&#10084;</span> by Habib
+              Shah
             </p>
           </article>
         </footer>

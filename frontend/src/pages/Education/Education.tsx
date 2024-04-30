@@ -1,5 +1,9 @@
 import Certification from "../../components/Certification/Certification";
-import { certifications, educationWebLinks } from "../../components/Constants";
+import {
+  certifications,
+  educationInfos,
+  educationWebLinks,
+} from "../../components/Constants";
 import EduGraduation from "../../components/EduGraduation/EduGraduation";
 import EducationHero from "../../components/EducationHero/EducationHero";
 import styles from "../../style";
@@ -21,7 +25,7 @@ const Education: React.FC = () => {
         <div className="blur-topMiddle absolute"></div>
         <div className="blur-rightMiddle absolute"></div>
         <div className={`${styles.paddingX} container mx-auto`}>
-          <EduGraduation />
+          <EduGraduation educationInfos={educationInfos} />
         </div>
       </article>
       <article className="relative h-auto">

@@ -16,6 +16,8 @@ import aws from "../../assets/social/aws.svg";
 import github from "../../assets/social/github.svg";
 import lightning from "../../assets/home/lightning.svg";
 
+import gub from "../../assets/education/gub.svg";
+
 import hackerrank from "../../assets/website/hackerrank.svg";
 import leetcode from "../../assets/website/leetcode.svg";
 
@@ -154,6 +156,53 @@ export const educationWebLinks = [
     title: "LeetCode",
     link: "https://leetcode.com/habibshahalahi7424/",
     icon: leetcode,
+  },
+];
+
+export const educationInfos = [
+  {
+    id: "1",
+    institute: "Green University of Bangladesh",
+    subject: "BSc in Electrical and Electronic Engineering (EEE)",
+    accomplish: "running",
+    image: gub,
+    details: [
+      {
+        id: "1",
+        desc: "I am studying electrical and electronic engineering subjects like Electronics, Electromagnetism etc.",
+      },
+      {
+        id: "2",
+        desc: "Apart from this, I have done courses on Great Learning, Front End Development, Cloud Infra Architecture and MERN Stack Development.",
+      },
+      {
+        id: "3",
+        desc: "Engineering is more than just solving code or wires and circuits – it's about problem-solving, innovation, and the relentless pursuit of progress. With the right guidance and resources.",
+      },
+    ],
+    link: "https://green.edu.bd/",
+  },
+  {
+    id: "2",
+    institute: "AKM Rahmatullah University College",
+    subject: "HSC in Science",
+    accomplish: "2017-2019",
+    image: gub,
+    details: [
+      {
+        id: "1",
+        desc: "I have studied science where my academic career was conducting research projects that explored pressing issues in the scientific community.",
+      },
+      {
+        id: "2",
+        desc: "Apart from this, I acquired knowledge about computer literacy which increased my skills and experience.",
+      },
+      {
+        id: "3",
+        desc: "I wanted to find a program that would not only challenge me academically but also provide me with hands-on experience in the field.",
+      },
+    ],
+    link: "https://green.edu.bd/",
   },
 ];
 
