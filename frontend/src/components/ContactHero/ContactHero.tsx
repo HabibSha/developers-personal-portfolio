@@ -47,9 +47,13 @@ const ContactHero: React.FC = () => {
             <div className={`${footerSocial.socialLinks} bg-[#fa2a69]`}>
               <FaInstagram />
             </div>
-            <div className={`${footerSocial.socialLinks} bg-blue-600`}>
+            <Link
+              to="https://www.facebook.com/profile.php?id=100028631380085"
+              target="_blank"
+              className={`${footerSocial.socialLinks} bg-blue-600`}
+            >
               <FaFacebookF />
-            </div>
+            </Link>
             <Link
               to="https://twitter.com/HabibShah2524"
               target="_blank"
