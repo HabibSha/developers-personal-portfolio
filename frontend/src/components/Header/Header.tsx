@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
 import styles from "../../style";
+import logo from "../../assets/logo.png";
 
 type NavLink = {
   id: string;
@@ -35,7 +36,9 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
       <nav
         className={`${styles.flexBetween} ${styles.resContainer} ${styles.paddingX}`}
       >
-        <div className="text-2xl font-bold">Portfolio</div>
+        <div>
+          <img src={logo} alt="Logo" className="w-[10rem]" />
+        </div>
         <ul className={`${styles.flexBetween} hidden md:flex`}>
           {navLinks.map((navLink, index) => {
             const { id, link, title } = navLink;

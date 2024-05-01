@@ -18,7 +18,7 @@ interface Props {
 
 const Certification: React.FC<Props> = ({ certifications }) => {
   return (
-    <section className="relative py-[5rem]">
+    <section className="relative lg:pt-[2rem] pb-[5rem]">
       <article className="text-center">
         <h2 className="h2 text-gradient font-[500]">Certifications</h2>
       </article>

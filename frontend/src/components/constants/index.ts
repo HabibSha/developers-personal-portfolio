@@ -29,6 +29,10 @@ import cyberez from "../../assets/projects/cyberez.png";
 import redonion from "../../assets/projects/redonion.png";
 import programminghero from "../../assets/projects/programminghero.png";
 
+import phone from "../../assets/contact/phone.svg";
+import email from "../../assets/contact/email.svg";
+import location from "../../assets/contact/location.svg";
+
 export const navLinks = [
   {
     id: "1",
@@ -280,5 +284,26 @@ export const projectLists = [
       { id: "4", title: "TailwindCSS", icon: tailwind },
     ],
     // alt: "ProgrammingHero",
+  },
+];
+
+export const contactInfo = [
+  {
+    id: "1",
+    title: "Contact Number",
+    contact: "+880 1642457202",
+    icon: phone,
+  },
+  {
+    id: "2",
+    title: "My Email Address",
+    contact: "habibshahalahi7424@gmail.com",
+    icon: email,
+  },
+  {
+    id: "3",
+    title: "My Location",
+    contact: "Madani Ave, Vatara, Main Road, Gulashan, Dhaka-1212",
+    icon: location,
   },
 ];

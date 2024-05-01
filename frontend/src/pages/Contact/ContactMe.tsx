@@ -2,6 +2,8 @@ import React from "react";
 
 import styles from "../../style";
 import ContactHero from "../../components/ContactHero/ContactHero";
+import ContactInfo from "../../components/ContactInfo/ContactInfo";
+import { contactInfo } from "../../components/Constants";
 
 const ContactMe: React.FC = () => {
   return (
@@ -12,6 +14,11 @@ const ContactMe: React.FC = () => {
         {/* <div className="blur-bottomCorner absolute"></div> */}
         <div className={`container mx-auto ${styles.paddingX}`}>
           <ContactHero />
+        </div>
+      </article>
+      <article className="relative h-auto">
+        <div className={`container mx-auto ${styles.paddingX}`}>
+          <ContactInfo contactInfo={contactInfo} />
         </div>
       </article>
     </section>

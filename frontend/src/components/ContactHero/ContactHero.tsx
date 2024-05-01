@@ -26,7 +26,7 @@ const ContactHero: React.FC = () => {
             media. You can message me, I will reply within 24 hours. I can help
             you with MERN, React, Javacript and Responsive Web Development.
           </p>
-          <div className="flex items-center justify-center gap-3 text-xl py-3">
+          <div className="flex items-center justify-center gap-3 text-xl my-5">
             <Link
               to="https://github.com/HabibSha"
               target="_blank"
