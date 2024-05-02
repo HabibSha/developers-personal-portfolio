@@ -4,7 +4,7 @@ import projectC from "../../assets/projects/projectC.svg";
 
 const ProjectHero: React.FC = () => {
   return (
-    <section className="relative py-[1rem] grid grid-cols-1 lg:gap-5 lg:grid-cols-2">
+    <section className="relative pt-[3rem] lg:py-[1rem] grid grid-cols-1 lg:gap-5 lg:grid-cols-2">
       <article className="order-2 lg:order-1 flex justify-center">
         <img src={projectC} alt="Project" className="w-[100%]" />
       </article>

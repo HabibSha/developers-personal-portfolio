@@ -1,7 +1,8 @@
-// declare module "scroll-lock" {
-//   export function disablePageScroll(
-//     targetElement: Element | null,
-//     options?
-//   ): void;
-//   export function enablePageScroll(targetElement: Element | null): void;
-// }
+declare module "body-scroll-lock" {
+  export function disableBodyScroll(
+    targetElement: Element | null,
+    options?: unknown
+  ): void;
+  export function enableBodyScroll(targetElement: Element | null): void;
+  export function clearAllBodyScrollLocks(): void;
+}

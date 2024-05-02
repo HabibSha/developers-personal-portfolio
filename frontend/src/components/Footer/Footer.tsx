@@ -15,7 +15,7 @@ import styles, { footerSocial } from "../../style";
 
 const Footer: React.FC = () => {
   return (
-    <section className="w-full h-auto bg-bgPrimary">
+    <section className="w-full relative h-auto bg-bgPrimary">
       <div className={`backgroundGlossy ${styles.flexCenter} relative py-12`}>
         <footer className={`${styles.resContainer} ${styles.paddingX}`}>
           <article
@@ -42,8 +42,8 @@ const Footer: React.FC = () => {
           </article>
           <article className={`${styles.flexCenter}`}>
             <p className="absolute bottom-2">
-              Made with <span className="text-red-700">&#10084;</span> by Habib
-              Shah
+              Made with <span className="text-[#ff0000]">&#10084;</span> by
+              Habib Shah
             </p>
           </article>
         </footer>

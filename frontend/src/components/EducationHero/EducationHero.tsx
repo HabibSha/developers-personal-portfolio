@@ -28,7 +28,7 @@ const EducationHero: React.FC<Props> = ({ educationWebLinks }) => {
   };
 
   return (
-    <section className="relative py-[2rem] grid grid-cols-1 lg:gap-5 lg:grid-cols-2">
+    <section className="relative py-[4rem] lg:py-[2rem]  grid grid-cols-1 lg:gap-5 lg:grid-cols-2">
       <article className="order-2 lg:order-1 flex justify-center">
         <img src={educationA} alt="Education" className="w-[80%]" />
       </article>
