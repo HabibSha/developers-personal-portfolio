@@ -1,0 +1,39 @@
+.scrollXA-infinite {
+  white-space: nowrap;
+  /* overflow: hidden; */
+  display: inline-block; /* Use inline-block to prevent line break */
+  animation: scrollXa 10s linear infinite;
+}
+
+.scrollXA-infinite img {
+  object-fit: contain;
+}
+
+@keyframes scrollXa {
+  0% {
+    transform: translateX(-33%);
+  }
+  100% {
+    transform: translateX(-220%);
+  }
+}
+
+.scrollXB-infinite {
+  white-space: nowrap;
+  /* overflow: hidden; */
+  display: inline-block; /* Use inline-block to prevent line break */
+  animation: scrollXb 5s linear infinite;
+}
+
+.scrollXA-infinite img {
+  object-fit: contain;
+}
+
+@keyframes scrollXb {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
