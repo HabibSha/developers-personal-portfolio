@@ -16,12 +16,7 @@ const Contribute: React.FC<Props> = ({ contributeSites }) => {
   return (
     <section className="relative py-[3rem] lg:py-[5rem]">
       <article className="">
-        <Marquee
-          speed={120}
-          // gradient
-          // gradientColor="#e855de"
-          // gradientWidth={80}
-        >
+        <Marquee speed={120} pauseOnHover>
           {contributeSites.map((contributeSite) => {
             const { id, alt, image } = contributeSite;
             let imageSize = "";
@@ -61,7 +56,7 @@ const Contribute: React.FC<Props> = ({ contributeSites }) => {
             return (
               <div
                 key={id}
-                className="mx-[1rem] lg:mx-[2rem] bg-slate-200 px-4 py-2 rounded-sm opacity-80"
+                className="mx-[1rem] lg:mx-[2rem] bg-[orange] px-4 py-2 rounded-sm opacity-80"
               >
                 <img src={image} alt={alt} className={`${imageSize}`} />
               </div>
