@@ -7,8 +7,6 @@ import {
   ProfessionBackgroundDot,
 } from "../../components/design/Home/Home";
 import Profession from "../../components/Profession/Profession";
-import Contribute from "../../components/Contribute/Contribute";
-
 const Home: React.FC = () => {
   return (
     <section>
@@ -38,11 +36,6 @@ const Home: React.FC = () => {
         </div>
         <div className={`container mx-auto ${styles.paddingX}`}>
           <Profession />
-        </div>
-      </article>
-      <article>
-        <div className={`container overflow-hidden mx-auto ${styles.paddingX}`}>
-          <Contribute />
         </div>
       </article>
     </section>

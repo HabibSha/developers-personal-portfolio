@@ -2,6 +2,7 @@ import MernStack from "../MernStack/MernStack";
 import {
   backendInfos,
   backendSocials,
+  contributeSites,
   frontendInfos,
   frontendSocials,
   mernInfos,
@@ -10,6 +11,7 @@ import {
 import "./profession.css";
 import FrontEnd from "../FrontEnd/FrontEnd";
 import BackEnd from "../BackEnd/BackEnd";
+import Contribute from "../Contribute/Contribute";
 
 const Profession: React.FC = () => {
   return (
@@ -30,6 +32,19 @@ const Profession: React.FC = () => {
       </article>
       <article>
         <BackEnd backendSocials={backendSocials} backendInfos={backendInfos} />
+      </article>
+      <article className="overflow-hidden">
+        <div className="text-center">
+          <h2 className="h2 mt-1 mb-4 font-semibold">
+            Contributed Organizations
+          </h2>
+          <p className="body-1">
+            Some organizations that helped me a lots to learn latest technology
+            tools.
+          </p>
+          <span className="gradient-line"></span>
+        </div>
+        <Contribute contributeSites={contributeSites} />
       </article>
     </section>
   );

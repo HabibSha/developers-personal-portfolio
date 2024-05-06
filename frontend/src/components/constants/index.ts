@@ -16,6 +16,16 @@ import aws from "../../assets/social/aws.svg";
 import github from "../../assets/social/github.svg";
 import lightning from "../../assets/home/lightning.svg";
 
+import openAi from "../../assets/contribute/openAi.png";
+import reactTraining from "../../assets/contribute/reacttraining.png";
+import greatlearnings from "../../assets/contribute/greatlearning.png";
+import google from "../../assets/contribute/google.png";
+import stackoverflow from "../../assets/contribute/stackoverflow.png";
+import freecodecamp from "../../assets/contribute/freecodecamp.png";
+import meta from "../../assets/contribute/meta.png";
+import w3schools from "../../assets/contribute/w3school.png";
+import codeacademy from "../../assets/contribute/codeacademy.png";
+
 import gub from "../../assets/education/gub.svg";
 
 import hackerrank from "../../assets/website/hackerrank.svg";
@@ -146,6 +156,18 @@ export const backendInfos = [
       "Designing highly attractive user interface for mobile and web applications",
     icon: lightning,
   },
+];
+
+export const contributeSites = [
+  { id: "1", alt: "Open AI", image: openAi },
+  { id: "2", alt: "React Training", image: reactTraining },
+  { id: "3", alt: "Great Learning", image: greatlearnings },
+  { id: "4", alt: "Google", image: google },
+  { id: "5", alt: "Meta", image: meta },
+  { id: "6", alt: "W3School", image: w3schools },
+  { id: "7", alt: "Stack Overflow", image: stackoverflow },
+  { id: "8", alt: "FreeCodeCamp", image: freecodecamp },
+  { id: "9", alt: "Code Academy", image: codeacademy },
 ];
 
 export const educationWebLinks = [
