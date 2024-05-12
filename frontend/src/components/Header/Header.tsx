@@ -69,7 +69,9 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
     >
       <nav className={`${styles.flexBetween} container ${styles.paddingX}`}>
         <div>
-          <img src={logo} alt="Logo" className="w-[10rem]" />
+          <p className="text-2xl lg:text-3xl text-gradient font-Smooch">
+            &#8249; HabibShahedAlahi / &#8250;
+          </p>
         </div>
         <ul className={`${styles.flexBetween} hidden md:flex`}>
           {navLinks.map((navLink, index) => {

@@ -13,6 +13,9 @@ export default {
         colorOffWhite: "#EEE6FD",
         colorWhite: "#FFFFFF",
       },
+      fontFamily: {
+        Smooch: ["Smooch", "cursive"],
+      },
       backgroundColor: {
         bgPrimary: "#0d0518",
       },

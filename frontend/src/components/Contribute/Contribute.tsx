@@ -56,7 +56,7 @@ const Contribute: React.FC<Props> = ({ contributeSites }) => {
             return (
               <div
                 key={id}
-                className="mx-[1rem] lg:mx-[2rem] bg-[orange] px-4 py-2 rounded-sm opacity-80"
+                className="mx-[1rem] lg:mx-[2rem] bg-slate-200 px-4 py-2 rounded-sm opacity-80"
               >
                 <img src={image} alt={alt} className={`${imageSize}`} />
               </div>
@@ -106,7 +106,7 @@ const Contribute: React.FC<Props> = ({ contributeSites }) => {
             return (
               <div
                 key={id}
-                className="mx-[1rem] lg:mx-[2rem] bg-[orange] px-4 py-2 rounded-sm opacity-80"
+                className="mx-[1rem] lg:mx-[2rem] bg-slate-200 px-4 py-2 rounded-sm opacity-80"
               >
                 <img src={image} alt={alt} className={`${imageSize}`} />
               </div>

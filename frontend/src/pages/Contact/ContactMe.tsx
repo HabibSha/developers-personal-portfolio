@@ -7,8 +7,8 @@ import { contactInfo } from "../../components/Constants";
 
 const ContactMe: React.FC = () => {
   return (
-    <section className="border-b-[1px]">
-      <article className="relative border-b-[1px] h-auto pt-[9vh]">
+    <section>
+      <article className="relative h-auto pt-[9vh]">
         {/* <div className="blur-leftCorner absolute"></div> */}
         <div className="blur-rightCorner absolute"></div>
         {/* <div className="blur-bottomCorner absolute"></div> */}
