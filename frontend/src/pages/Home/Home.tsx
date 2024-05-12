@@ -10,7 +10,7 @@ import Profession from "../../components/Profession/Profession";
 const Home: React.FC = () => {
   return (
     <section>
-      <article className="border-b-2 relative h-auto pt-[9vh]">
+      <article className="relative h-auto pt-[9vh]">
         <div className="blur-leftCorner absolute"></div>
         <div className="blur-rightCorner absolute"></div>
         <div className="blur-bottomCorner absolute"></div>
