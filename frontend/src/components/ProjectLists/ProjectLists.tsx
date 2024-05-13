@@ -13,6 +13,7 @@ interface ProjectList {
   id: string;
   title: string;
   image: string;
+  link: string;
   projectIcons: ProjectIcon[];
 }
 
@@ -21,20 +22,31 @@ interface Props {
 }
 
 const ProjectLists: React.FC<Props> = ({ projectLists }) => {
-  const [hoverState, setHoverState] = useState<{ [key: string]: boolean }>({});
+  const [hoverStates, setHoverStates] = useState<string[]>(
+    Array(projectLists.length).fill("")
+  );
 
-  const handleMouseEnter = (id: string) => {
-    setHoverState({ ...hoverState, [id]: true });
+  const handleMouseEnter = (index: number, id: string) => {
+    setHoverStates((prevState) => {
+      const newState = [...prevState];
+      newState[index] = id; // Store the ID of the hovered project icon
+      return newState;
+    });
   };
-  const handleMouseLeave = (id: string) => {
-    setHoverState({ ...hoverState, [id]: false });
+
+  const handleMouseLeave = (index: number) => {
+    setHoverStates((prevState) => {
+      const newState = [...prevState];
+      newState[index] = false; // Reset to false when mouse leaves
+      return newState;
+    });
   };
 
   return (
     <section className="relative py-[5rem]">
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
-        {projectLists.map((projectList) => {
-          const { id, title, image, projectIcons } = projectList;
+        {projectLists.map((projectList, index) => {
+          const { id, title, image, link, projectIcons } = projectList;
           return (
             <div key={id} className="rounded-md bg-glassEffect">
               <div
@@ -45,7 +57,7 @@ const ProjectLists: React.FC<Props> = ({ projectLists }) => {
                 <div className="flex justify-between items-baseline gap-4">
                   <h6 className="h6">{title}</h6>
                   <div className="flex items-center gap-5">
-                    <Link to="#" target="_blank">
+                    <Link to={link} target="_blank">
                       <FaGithub className="text-[1.4rem]" />
                     </Link>
                     <Link to="#" target="_blank">
@@ -58,20 +70,20 @@ const ProjectLists: React.FC<Props> = ({ projectLists }) => {
                     <button className="btnPrimary">Details</button>
                   </div>
                   <div className="flex items-center lg:justify-end gap-4 mt-6 order-1 lg:order-2">
-                    {projectIcons.map((projectIcon) => {
+                    {projectIcons.map((projectIcon, iconIndex) => {
                       const { id, title, icon } = projectIcon;
                       return (
-                        <div id={id} className="relative">
+                        <div key={id} className="relative">
                           <img
                             src={icon}
-                            alt=""
+                            alt={title}
                             className="w-7 mb-[2rem]"
-                            onMouseEnter={() => handleMouseEnter(id)}
-                            onMouseLeave={() => handleMouseLeave(id)}
+                            onMouseEnter={() => handleMouseEnter(index)}
+                            onMouseLeave={() => handleMouseLeave(index)}
                           />
                           <span
                             className={`absolute text-[15px] -top-7 -left-4 bg-gradient px-1 ${
-                              hoverState[id] ? "block" : "hidden"
+                              hoverStates[index] === id ? "block" : "hidden"
                             }`}
                           >
                             {title}

@@ -264,6 +264,7 @@ export const projectLists = [
     id: "1",
     title: "Portfolio - A Portfolio Website for Web Developers",
     image: developers,
+    link: "https://github.com/HabibSha/developers-personal-portfolio",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "JavaScript", icon: javascript },
@@ -276,6 +277,7 @@ export const projectLists = [
     id: "2",
     title: "CyberEz - A Programming Language Course Website",
     image: cyberez,
+    link: "https://github.com/HabibSha/cyberez-courses",
     projectIcons: [
       { id: "1", title: "HTML5", icon: html5 },
       { id: "2", title: "CSS3", icon: css },
@@ -287,6 +289,7 @@ export const projectLists = [
     id: "3",
     title: "RedOnion - A E-commerce Application for Foods Item",
     image: redonion,
+    link: "https://github.com/HabibSha/red-onion",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "Redux", icon: redux },
@@ -299,6 +302,7 @@ export const projectLists = [
     id: "4",
     title: "Dummy - For Testing Purpose",
     image: programminghero,
+    link: "https://github.com/HabibSha/red-onion",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "JavaScript", icon: javascript },
