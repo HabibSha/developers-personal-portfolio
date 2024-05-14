@@ -22,24 +22,18 @@ interface Props {
 }
 
 const ProjectLists: React.FC<Props> = ({ projectLists }) => {
-  const [hoverStates, setHoverStates] = useState<string[]>(
-    Array(projectLists.length).fill("")
+  const [hoverStates, setHoverStates] = useState<{ [key: string]: boolean }>(
+    {}
   );
 
-  const handleMouseEnter = (index: number, id: string) => {
-    setHoverStates((prevState) => {
-      const newState = [...prevState];
-      newState[index] = id; // Store the ID of the hovered project icon
-      return newState;
-    });
+  const handleMouseEnter = (index: number, iconIndex: number) => {
+    const key = `${index}-${iconIndex}`;
+    setHoverStates((prevState) => ({ ...prevState, [key]: true }));
   };
 
-  const handleMouseLeave = (index: number) => {
-    setHoverStates((prevState) => {
-      const newState = [...prevState];
-      newState[index] = false; // Reset to false when mouse leaves
-      return newState;
-    });
+  const handleMouseLeave = (index: number, iconIndex: number) => {
+    const key = `${index}-${iconIndex}`;
+    setHoverStates((prevState) => ({ ...prevState, [key]: false }));
   };
 
   return (
@@ -72,18 +66,23 @@ const ProjectLists: React.FC<Props> = ({ projectLists }) => {
                   <div className="flex items-center lg:justify-end gap-4 mt-6 order-1 lg:order-2">
                     {projectIcons.map((projectIcon, iconIndex) => {
                       const { id, title, icon } = projectIcon;
+                      const key = `${index}-${iconIndex}`;
                       return (
                         <div key={id} className="relative">
                           <img
                             src={icon}
                             alt={title}
                             className="w-7 mb-[2rem]"
-                            onMouseEnter={() => handleMouseEnter(index)}
-                            onMouseLeave={() => handleMouseLeave(index)}
+                            onMouseEnter={() =>
+                              handleMouseEnter(index, iconIndex)
+                            }
+                            onMouseLeave={() =>
+                              handleMouseLeave(index, iconIndex)
+                            }
                           />
                           <span
                             className={`absolute text-[15px] -top-7 -left-4 bg-gradient px-1 ${
-                              hoverStates[index] === id ? "block" : "hidden"
+                              hoverStates[key] ? "block" : "hidden"
                             }`}
                           >
                             {title}
