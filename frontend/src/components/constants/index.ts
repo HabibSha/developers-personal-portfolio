@@ -30,6 +30,8 @@ import gub from "../../assets/education/gub.svg";
 
 import hackerrank from "../../assets/website/hackerrank.svg";
 import leetcode from "../../assets/website/leetcode.svg";
+import codewars from "../../assets/website/codewars.png";
+import codechef from "../../assets/website/codechef.png";
 
 import greatlearning from "../../assets/education/greatlearning.png";
 import simplylearn from "../../assets/education/simplylearn.png";
@@ -37,7 +39,7 @@ import simplylearn from "../../assets/education/simplylearn.png";
 import developers from "../../assets/projects/developers.png";
 import cyberez from "../../assets/projects/cyberez.png";
 import redonion from "../../assets/projects/redonion.png";
-import programminghero from "../../assets/projects/programminghero.png";
+import ecommerce from "../../assets/projects/ecommerce.png";
 
 import phone from "../../assets/contact/phone.svg";
 import email from "../../assets/contact/email.svg";
@@ -183,6 +185,18 @@ export const educationWebLinks = [
     link: "https://leetcode.com/habibshahalahi7424/",
     icon: leetcode,
   },
+  {
+    id: "3",
+    title: "CodeWars",
+    link: "https://www.codewars.com/users/Habib%20Shahed%20Alahi",
+    icon: codewars,
+  },
+  {
+    id: "4",
+    title: "CodeChef",
+    link: "https://www.codechef.com/users/habibshah",
+    icon: codechef,
+  },
 ];
 
 export const educationInfos = [
@@ -300,16 +314,16 @@ export const projectLists = [
   },
   {
     id: "4",
-    title: "Dummy - For Testing Purpose",
-    image: programminghero,
-    link: "https://github.com/HabibSha/red-onion",
+    title: "E-commerce - Varieties Store",
+    image: ecommerce,
+    link: "https://github.com/HabibSha/dynamic_ecommerce_app",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "JavaScript", icon: javascript },
       { id: "3", title: "TypeScript", icon: typescript },
       { id: "4", title: "TailwindCSS", icon: tailwind },
     ],
-    // alt: "ProgrammingHero",
+    // alt: "E-commerce",
   },
 ];
 

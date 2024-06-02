@@ -69,7 +69,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
     >
       <nav className={`${styles.flexBetween} container ${styles.paddingX}`}>
         <div>
-          <p className="text-2xl lg:text-3xl text-gradient font-Smooch">
+          <p className="text-2xl xl:text-3xl text-gradient font-Smooch">
             &#8249; HabibShahedAlahi / &#8250;
           </p>
         </div>
@@ -83,8 +83,8 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
                   className={`${
                     index === navLinks.length - 1
                       ? "mr-0"
-                      : "mr-[2.8rem] lg:mr-[4rem]"
-                  } hover:text-colorPink hover:font-[500] duration-300 ease-linear`}
+                      : "mr-[2.8rem] xl:mr-[4rem]"
+                  } text-[14px] md:text-[15px] xl:text-[16px] hover:text-colorPink hover:font-[500] duration-300 ease-linear`}
                   activeClassName="active"
                 >
                   {title}
@@ -112,7 +112,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
             !openNavigation ? "translate-x-[100%]" : "translate-x-[0]"
           } md:hidden transition duration-500 w-full h-screen absolute pt-[7.5rem] lg:pt-[10rem] ${
             isShrunk ? "top-[8vh]" : "top-[9vh]"
-          } right-0 bg-colorPink`}
+          } right-0 bg-colorLightBlue z-50`}
         >
           <ul className={`h-full flex flex-col items-center`}>
             {navLinks.map((navLink, index) => {

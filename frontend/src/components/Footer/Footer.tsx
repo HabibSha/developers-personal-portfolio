@@ -7,11 +7,13 @@ import {
   FaLinkedinIn,
   FaInstagram,
   FaFacebookF,
+  FaGoogle,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 import "./footer.css";
 import styles, { footerSocial } from "../../style";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -22,26 +24,53 @@ const Footer: React.FC = () => {
             className={`flex items-start sm:items-center sm:justify-between ${styles.borderBottom} flex-col sm:flex-row pb-[2rem]`}
           >
             <div className="mb-6 sm:mb-0">
-              <p className="text-3xl text-gradient font-Smooch">
+              <p className="text-2xl xl:text-3xl text-gradient font-Smooch">
                 &#8249; HabibShahedAlahi / &#8250;
               </p>
             </div>
-            <div className="flex items-center gap-3 text-xl">
-              <div className={`${footerSocial.socialLinks} bg-slate-800`}>
+            <div className="flex items-center gap-3 text-lg lg:text-xl">
+              <Link
+                to="https://github.com/HabibSha"
+                target="_blank"
+                className={`${footerSocial.socialLinks} bg-slate-900`}
+              >
                 <FaGithub />
-              </div>
-              <div className={`${footerSocial.socialLinks} bg-blue-500`}>
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/habib-shah/"
+                target="_blank"
+                className={`${footerSocial.socialLinks} bg-blue-500`}
+              >
                 <FaLinkedinIn />
-              </div>
-              <div className={`${footerSocial.socialLinks} bg-[#fa2a69]`}>
+              </Link>
+              <Link
+                to="mailto:habibshahalahi7424@gmail.com"
+                target="_blank"
+                className={`${footerSocial.socialLinks} bg-orange-700`}
+              >
+                <FaGoogle />
+              </Link>
+              <Link
+                to="https://www.instagram.com/ftllxhabibshah/"
+                target="_blank"
+                className={`${footerSocial.socialLinks} bg-[#fa2a69]`}
+              >
                 <FaInstagram />
-              </div>
-              <div className={`${footerSocial.socialLinks} bg-blue-600`}>
+              </Link>
+              <Link
+                to="https://www.facebook.com/profile.php?id=100028631380085"
+                target="_blank"
+                className={`${footerSocial.socialLinks} bg-blue-600`}
+              >
                 <FaFacebookF />
-              </div>
-              <div className={`${footerSocial.socialLinks} bg-black`}>
+              </Link>
+              <Link
+                to="https://twitter.com/HabibShah2524"
+                target="_blank"
+                className={`${footerSocial.socialLinks} bg-black`}
+              >
                 <FaXTwitter />
-              </div>
+              </Link>
             </div>
           </article>
           <article className={`${styles.flexCenter}`}>
