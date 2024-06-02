@@ -74,7 +74,7 @@ const FrontEnd: React.FC<Props> = ({ frontendSocials, frontendinfos }) => {
           })}
         </div>
         <div>
-          <img src={heroD} alt="FrontEnd" className="w-[100%]" />
+          <img src={heroD} alt="FrontEnd" className="w-[100%] z-50" />
         </div>
       </article>
     </section>

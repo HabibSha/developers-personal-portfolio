@@ -44,7 +44,7 @@ const Hero = () => {
         <img
           src={heroA}
           alt="HeroA"
-          className="max-w-[90%] lg:w-[90%] lg:absolute lg:-top-[6rem] lg:left-[2rem]"
+          className="max-w-[90%] lg:w-[90%] lg:absolute lg:-top-[6rem] lg:left-[2rem] z-50"
         />
       </article>
     </section>

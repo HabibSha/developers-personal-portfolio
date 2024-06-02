@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { NavLink as BaseNavLink } from "react-router-dom";
+import { NavLink as BaseNavLink, Link } from "react-router-dom";
 import {
   disableBodyScroll,
   enableBodyScroll,
@@ -10,7 +10,6 @@ import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
 import styles from "../../style";
 import "./header.css";
-import logo from "../../assets/logo.png";
 
 type NavLink = {
   id: string;
@@ -61,18 +60,18 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
     <section
       className={`w-full transition-all duration-300 ease-in-out  ${
         styles.flexCenter
-      } fixed z-50 ${
+      } fixed z-[99] ${
         isShrunk
           ? "h-[8vh] bg-opacity-90 backdrop-blur-[8px]"
           : "bg-transparent h-[9vh]"
       }`}
     >
       <nav className={`${styles.flexBetween} container ${styles.paddingX}`}>
-        <div>
-          <p className="text-2xl xl:text-3xl text-gradient font-Smooch">
+        <Link to="/">
+          <p className="text-xl md:text-2xl xl:text-3xl text-gradient font-Smooch">
             &#8249; HabibShahedAlahi / &#8250;
           </p>
-        </div>
+        </Link>
         <ul className={`${styles.flexBetween} hidden md:flex`}>
           {navLinks.map((navLink, index) => {
             const { id, link, title } = navLink;

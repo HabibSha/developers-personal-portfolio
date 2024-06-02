@@ -23,11 +23,11 @@ const Footer: React.FC = () => {
           <article
             className={`flex items-start sm:items-center sm:justify-between ${styles.borderBottom} flex-col sm:flex-row pb-[2rem]`}
           >
-            <div className="mb-6 sm:mb-0">
-              <p className="text-2xl xl:text-3xl text-gradient font-Smooch">
+            <Link to="/" className="mb-6 sm:mb-0">
+              <p className="text-xl md:text-2xl xl:text-3xl text-gradient font-Smooch">
                 &#8249; HabibShahedAlahi / &#8250;
               </p>
-            </div>
+            </Link>
             <div className="flex items-center gap-3 text-lg lg:text-xl">
               <Link
                 to="https://github.com/HabibSha"

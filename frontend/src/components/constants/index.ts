@@ -36,7 +36,7 @@ import codechef from "../../assets/website/codechef.png";
 import greatlearning from "../../assets/education/greatlearning.png";
 import simplylearn from "../../assets/education/simplylearn.png";
 
-import developers from "../../assets/projects/developers.png";
+import portfolio from "../../assets/projects/portfolio.png";
 import cyberez from "../../assets/projects/cyberez.png";
 import redonion from "../../assets/projects/redonion.png";
 import ecommerce from "../../assets/projects/ecommerce.png";
@@ -277,13 +277,13 @@ export const projectLists = [
   {
     id: "1",
     title: "Portfolio - A Portfolio Website for Web Developers",
-    image: developers,
+    image: portfolio,
     link: "https://github.com/HabibSha/developers-personal-portfolio",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "JavaScript", icon: javascript },
       { id: "3", title: "TypeScript", icon: typescript },
-      { id: "4", title: "TailwindCSS", icon: tailwind },
+      { id: "4", title: "Tailwind", icon: tailwind },
     ],
     // alt: "Portfolio",
   },
@@ -307,7 +307,7 @@ export const projectLists = [
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "Redux", icon: redux },
-      { id: "3", title: "TailwindCSS", icon: tailwind },
+      { id: "3", title: "Tailwind", icon: tailwind },
       { id: "4", title: "Firebase", icon: firebase },
     ],
     // alt: "RedOnion",
@@ -319,9 +319,10 @@ export const projectLists = [
     link: "https://github.com/HabibSha/dynamic_ecommerce_app",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
-      { id: "2", title: "JavaScript", icon: javascript },
-      { id: "3", title: "TypeScript", icon: typescript },
-      { id: "4", title: "TailwindCSS", icon: tailwind },
+      { id: "2", title: "NodeJS", icon: nodejs },
+      { id: "3", title: "Express", icon: express },
+      { id: "4", title: "MongoDB", icon: mongodb },
+      { id: "5", title: "Tailwind", icon: tailwind },
     ],
     // alt: "E-commerce",
   },

@@ -6,11 +6,15 @@ import {
 } from "../../components/Constants";
 import EduGraduation from "../../components/EduGraduation/EduGraduation";
 import EducationHero from "../../components/EducationHero/EducationHero";
+import { EducationBackgroundDots } from "../../components/design/Education/BackgroundDots";
 import styles from "../../style";
 
 const Education: React.FC = () => {
   return (
     <section>
+      <div>
+        <EducationBackgroundDots />
+      </div>
       <article className="relative h-auto pt-[9vh]">
         <div className="blur-leftCorner absolute"></div>
         <div className="blur-rightCorner absolute"></div>

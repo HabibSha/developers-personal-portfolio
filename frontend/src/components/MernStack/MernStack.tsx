@@ -36,7 +36,7 @@ const MernStack: React.FC<Props> = ({ mernSocials, mernInfos }) => {
     <section>
       <article className="grid text-center gap-0 lg:text-start lg:grid-cols-2 lg:gap-5">
         <div className="order-2 lg:order-1">
-          <img src={heroB} alt="" className="max-w-[100%]" />
+          <img src={heroB} alt="MERN Stack" className="max-w-[100%] z-50" />
         </div>
         <div className="pt-[10%] lg:pt-[28%] order-1 lg:order-2">
           <h2 className="h2 text-gradient mb-8">MERN Stack Development</h2>
