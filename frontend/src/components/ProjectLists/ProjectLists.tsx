@@ -98,8 +98,12 @@ const ProjectLists: React.FC<Props> = ({ projectLists }) => {
         })}
       </article>
       <div className="mt-10 text-center">
-        <Link to="https://github.com/HabibSha" target="_blank">
-          <button className="btnPrimary">More Projects</button>
+        <Link
+          to="https://github.com/HabibSha"
+          target="_blank"
+          className="btnPrimary"
+        >
+          More Projects
         </Link>
       </div>
     </section>

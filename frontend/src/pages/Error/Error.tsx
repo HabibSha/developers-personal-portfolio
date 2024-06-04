@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 
 import styles from "../../style";
 import errorpage from "../../assets/error/errorpage.svg";
+import { ErrorBackgroundDots } from "../../components/design/Error/Error";
 
 const Error = () => {
   return (
     <section>
+      <div>
+        <ErrorBackgroundDots />
+      </div>
       <article className="relative h-screen pt-[9vh]">
         <div className="blur-leftCorner absolute"></div>
         <div className="blur-rightCorner absolute"></div>

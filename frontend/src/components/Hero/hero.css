@@ -1,3 +1,8 @@
+.backgroundNet {
+  background: url("../../assets/node.svg") no-repeat;
+  background-position: center;
+}
+
 .height {
   height: auto;
 }
@@ -12,4 +17,11 @@
   border-radius: 50%;
   background-color: rgb(245, 16, 245);
   filter: blur(1.8rem);
+}
+
+@media (max-width: 1024px) {
+  .backgroundNet {
+    background: none;
+    background-position: center;
+  }
 }

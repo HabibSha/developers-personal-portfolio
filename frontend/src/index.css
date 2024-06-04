@@ -41,6 +41,8 @@ html {
   padding: 0.5rem 1.2rem;
   position: relative;
   overflow: hidden;
+  display: inline-block;
+  z-index: 1;
 }
 
 .btnPrimary::before {

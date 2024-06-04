@@ -12,8 +12,9 @@ const Home: React.FC = () => {
     <section>
       <article className="relative h-auto pt-[9vh]">
         <div className="blur-leftCorner absolute"></div>
-        <div className="blur-rightCorner absolute"></div>
-        <div className="blur-bottomCorner absolute"></div>
+        <div className="blur-center absolute"></div>
+        {/* <div className="blur-rightCorner absolute"></div>
+        <div className="blur-bottomCorner absolute"></div> */}
         <div>
           <BackgroundDot />
         </div>

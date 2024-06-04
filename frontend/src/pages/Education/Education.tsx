@@ -6,7 +6,7 @@ import {
 } from "../../components/Constants";
 import EduGraduation from "../../components/EduGraduation/EduGraduation";
 import EducationHero from "../../components/EducationHero/EducationHero";
-import { EducationBackgroundDots } from "../../components/design/Education/BackgroundDots";
+import { EducationBackgroundDots } from "../../components/design/Education/Education";
 import styles from "../../style";
 
 const Education: React.FC = () => {

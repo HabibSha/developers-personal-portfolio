@@ -25,7 +25,7 @@ const ContactInfo: React.FC<Props> = ({ contactInfo }) => {
               <div className="select-none mb-5">
                 <img src={icon} alt="" className="w-[4rem]" />
               </div>
-              <h4 className="h4 font-[500] select-none mb-3">{title}</h4>
+              <h4 className="h4 font-[500] mb-3">{title}</h4>
               <p className="body-1">{contact}</p>
             </div>
           );

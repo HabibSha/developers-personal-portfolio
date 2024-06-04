@@ -1,9 +1,13 @@
 import ExperienceHero from "../../components/ExperienceHero/ExperienceHero";
+import { ExperienceBackgroundDots } from "../../components/design/Experience/Experience";
 import styles from "../../style";
 
 const Experience = () => {
   return (
     <section>
+      <div>
+        <ExperienceBackgroundDots />
+      </div>
       <article className="relative h-auto pt-[9vh]">
         <div className="blur-leftCorner absolute"></div>
         <div className="blur-rightCorner absolute"></div>

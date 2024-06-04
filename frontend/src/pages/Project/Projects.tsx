@@ -1,14 +1,14 @@
 import { projectLists } from "../../components/Constants";
 import ProjectHero from "../../components/ProjectHero/ProjectHero";
 import ProjectLists from "../../components/ProjectLists/ProjectLists";
-import { PagesBackgroundDot } from "../../components/design/Education/BackgroundDots";
+import { ProjectsBackgroundDots } from "../../components/design/Projects/Projects";
 import styles from "../../style";
 
 const Projects = () => {
   return (
     <section>
       <div>
-        <PagesBackgroundDot />
+        <ProjectsBackgroundDots />
       </div>
       <article className="relative h-auto pt-[9vh]">
         <div className="blur-leftCorner absolute"></div>
