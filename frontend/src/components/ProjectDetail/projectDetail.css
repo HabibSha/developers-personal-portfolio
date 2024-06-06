@@ -1,0 +1,32 @@
+.btnSecondary {
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
+  border: 1px solid #5400ee;
+  border-radius: 5px;
+  padding: 0.5rem 1.2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Change this from inline-block to flex */
+  align-items: center; /* Ensure items are centered */
+  justify-content: center; /* Ensure items are centered */
+  z-index: 1;
+}
+
+.btnSecondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #e855de 0%, #5400ee 100%);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.btnSecondary:hover::before {
+  opacity: 1;
+}

@@ -41,6 +41,21 @@ import cyberez from "../../assets/projects/cyberez.png";
 import redonion from "../../assets/projects/redonion.png";
 import ecommerce from "../../assets/projects/ecommerce.png";
 
+import PHome from "../../assets/projectDetails/PHome.png";
+import PEducation from "../../assets/projectDetails/PEducation.png";
+import PProjects from "../../assets/projectDetails/PProjects.png";
+import PContact from "../../assets/projectDetails/PContact.png";
+import CHome from "../../assets/projectDetails/cyberez-home.png";
+import CFeatured from "../../assets/projectDetails/cyberez-featured.png";
+import CCourses from "../../assets/projectDetails/cyberez-courses.png";
+import CRegister from "../../assets/projectDetails/cyberez-register.png";
+import CContact from "../../assets/projectDetails/cyberez-contact.png";
+import RHome from "../../assets/projectDetails/RHome.png";
+import RFoods from "../../assets/projectDetails/RFoods.png";
+import RDetails from "../../assets/projectDetails/RDetails.png";
+import RCart from "../../assets/projectDetails/RCart.png";
+import RRegister from "../../assets/projectDetails/RRegister.png";
+
 import phone from "../../assets/contact/phone.svg";
 import email from "../../assets/contact/email.svg";
 import location from "../../assets/contact/location.svg";
@@ -277,8 +292,50 @@ export const projectLists = [
   {
     id: "1",
     title: "Portfolio - A Portfolio Website for Web Developers",
-    image: portfolio,
+    desc: "This portfolio website is designed specifically for web developers, offering a fully responsive and functional showcase of their work and skills. The site ensures a seamless user experience across all devices. This portfolio not only demonstrates technical proficiency but also emphasizes a clean and modern design, reflecting the developer’s expertise in creating high-quality web applications.",
+    features: [
+      {
+        id: "1",
+        feature:
+          "Home page for an introduction to the developer and their professional profile.",
+      },
+      {
+        id: "2",
+        feature:
+          "Education page for a detailed overview of educational background and qualifications.",
+      },
+      {
+        id: "3",
+        feature:
+          "Projects page for showcases a collection of completed projects with descriptions and links.",
+      },
+      {
+        id: "4",
+        feature:
+          "Experience page for highlights professional experience and key accomplishments.",
+      },
+      {
+        id: "5",
+        feature:
+          "Contact Me page for provides an easy way for potential clients or employers to get in touch.",
+      },
+      {
+        id: "6",
+        feature:
+          "Error page for handle 404 not found, this page is designed to inform users that the requested page does not exist.",
+      },
+    ],
+    technology: "TypeScript, React, Tailwind CSS, CSS3 and Framer Motion",
+    img: portfolio,
+    images: [
+      { id: "1", image: PHome },
+      { id: "2", image: PEducation },
+      { id: "3", image: PProjects },
+      { id: "4", image: PContact },
+      { id: "5", image: "" },
+    ],
     link: "https://github.com/HabibSha/developers-personal-portfolio",
+    live: "",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "JavaScript", icon: javascript },
@@ -290,8 +347,55 @@ export const projectLists = [
   {
     id: "2",
     title: "CyberEz - A Programming Language Course Website",
-    image: cyberez,
+    desc: "This website is a meticulously designed suite of programming courses. This platform features an intuitive, user-friendly interface spread across 8 essential pages, each crafted to provide an optimal learning experience. This website is fully responsive and functional. This structured and responsive design ensures users can easily navigate through the website and access the information they need, enhancing their overall learning experience.",
+    features: [
+      {
+        id: "1",
+        feature:
+          "An inviting introduction to the website, highlighting key features and popular courses.",
+      },
+      {
+        id: "2",
+        feature:
+          "A detailed listing of all available programming courses, including brief descriptions and thumbnails.",
+      },
+      {
+        id: "3",
+        feature:
+          "In-depth information about each course, covering the syllabus, instructor details, and course duration.",
+      },
+      {
+        id: "4",
+        feature:
+          "A straightforward interface for users to enroll in their chosen courses, providing necessary information and payment options.",
+      },
+      {
+        id: "5",
+        feature:
+          "An easy-to-use contact form for users to reach out with inquiries, feedback, or support requests.",
+      },
+      {
+        id: "6",
+        feature:
+          "A registration form for new users to create an account and gain access to course materials.",
+      },
+      {
+        id: "7",
+        feature:
+          "A secure login page for returning users to access their accounts and continue their learning journey.",
+      },
+    ],
+    technology: "JavaScript, HTML5, CSS3",
+    img: cyberez,
+    images: [
+      { id: "1", image: CHome },
+      { id: "2", image: CFeatured },
+      { id: "3", image: CCourses },
+      { id: "4", image: CRegister },
+      { id: "5", image: CContact },
+    ],
     link: "https://github.com/HabibSha/cyberez-courses",
+    live: "",
     projectIcons: [
       { id: "1", title: "HTML5", icon: html5 },
       { id: "2", title: "CSS3", icon: css },
@@ -302,8 +406,55 @@ export const projectLists = [
   {
     id: "3",
     title: "RedOnion - A E-commerce Application for Foods Item",
-    image: redonion,
+    desc: "RedOnion is a sophisticated e-commerce application specifically designed for purchasing food items. The platform offers a seamless and user-friendly experience, utilizing the latest technologies to ensure efficient functionality and an engaging interface. This Website is designed to provide a smooth and enjoyable shopping experience for users, combining modern design with powerful functionality.",
+    features: [
+      {
+        id: "1",
+        feature:
+          "Users can easily add their selected food items to a shopping cart for later purchase.",
+      },
+      {
+        id: "2",
+        feature:
+          "A robust search feature allows users to find their desired food items quickly and efficiently.",
+      },
+      {
+        id: "3",
+        feature:
+          "Detailed descriptions, including ingredients, nutritional information, and pricing, are available for all food items.",
+      },
+      {
+        id: "4",
+        feature:
+          "Users can increase or decrease the quantity of each food item in their cart according to their needs.",
+      },
+      {
+        id: "5",
+        feature:
+          "Secure payment processing is handled through Stripe, ensuring user data protection and transaction safety.",
+      },
+      {
+        id: "6",
+        feature:
+          " If a user is not logged in during the checkout process, they will be redirected to the login page. Upon successful login, they can proceed with the payment.",
+      },
+      {
+        id: "7",
+        feature:
+          "After a successful payment, users are redirected to a confirmation page indicating that their order has been placed.",
+      },
+    ],
+    technology: "React, NodeJS, Firebase, Redux, Stripe and Tailwind CSS",
+    img: redonion,
+    images: [
+      { id: "1", image: RHome },
+      { id: "2", image: RFoods },
+      { id: "3", image: RDetails },
+      { id: "4", image: RCart },
+      { id: "5", image: RRegister },
+    ],
     link: "https://github.com/HabibSha/red-onion",
+    live: "",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "Redux", icon: redux },
@@ -314,9 +465,62 @@ export const projectLists = [
   },
   {
     id: "4",
-    title: "E-commerce - Varieties Store",
-    image: ecommerce,
+    title: "E-commerce - Varieties Store (Under Construction)",
+    desc: "The Varieties Store is a versatile and dynamic e-commerce platform designed to offer a wide range of products to users. Utilizing the MERN stack (MongoDB, Express, React, Node.js), this application provides a robust and seamless shopping experience, enhanced by secure authentication and modern design elements. The Varieties Store combines modern technologies and design principles to deliver a comprehensive e-commerce solution that caters to a wide range of user needs, providing a smooth and secure shopping experience.",
+    features: [
+      {
+        id: "1",
+        feature:
+          "Secure login and registration using JWT, ensuring user data protection.",
+      },
+      {
+        id: "2",
+        feature:
+          "A comprehensive display of product varieties, including detailed descriptions and pricing.",
+      },
+      {
+        id: "3",
+        feature:
+          "Users can add items to their cart, modify quantities, and review their selections before purchasing.",
+      },
+      {
+        id: "4",
+        feature:
+          "Efficient search feature to help users quickly find the products they need.",
+      },
+      {
+        id: "5",
+        feature:
+          "Detailed views of individual products, including images, specifications, and customer reviews.",
+      },
+      {
+        id: "6",
+        feature:
+          "Users can view and manage their orders, track shipments, and receive updates.",
+      },
+      {
+        id: "7",
+        feature:
+          "Secure checkout process powered by Stripe, allowing users to complete transactions confidently.",
+      },
+      {
+        id: "8",
+        feature:
+          "Ensures a seamless shopping experience across all devices, from desktops to mobile phones.",
+      },
+    ],
+    technology:
+      "MERN (MongoDB, Express, React, NodeJS), JWT, Redux, Stripe, Tailwind CSS, CSS",
+    img: ecommerce,
+    images: [
+      { id: "1", image: ecommerce },
+      { id: "2", image: "" },
+      { id: "3", image: "" },
+      { id: "4", image: "" },
+      { id: "5", image: "" },
+    ],
     link: "https://github.com/HabibSha/dynamic_ecommerce_app",
+    live: "",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "NodeJS", icon: nodejs },

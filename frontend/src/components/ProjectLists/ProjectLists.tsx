@@ -13,7 +13,7 @@ interface ProjectIcon {
 interface ProjectList {
   id: string;
   title: string;
-  image: string;
+  img: string;
   link: string;
   projectIcons: ProjectIcon[];
 }
@@ -41,13 +41,13 @@ const ProjectLists: React.FC<Props> = ({ projectLists }) => {
     <section className="relative py-[5rem]">
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
         {projectLists.map((projectList, index) => {
-          const { id, title, image, link, projectIcons } = projectList;
+          const { id, title, img, link, projectIcons } = projectList;
           const slug = title.toLowerCase().replace(/ /g, "-");
           return (
             <div key={id} className="rounded-md bg-glassEffect">
               <div
                 className="w-full h-[10rem] lg:h-[13rem] bg-top hover:bg-bottom duration-1000 ease-linear bg-no-repeat bg-cover rounded-tl-md rounded-tr-md"
-                style={{ backgroundImage: `url(${image})` }}
+                style={{ backgroundImage: `url(${img})` }}
               ></div>
               <motion.div
                 initial={{ y: 40, opacity: 0 }}
