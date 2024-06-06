@@ -1,7 +1,9 @@
 import React from "react";
 
-import "./certification.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+import "./certification.css";
 
 interface Certification {
   id: string;
@@ -18,7 +20,19 @@ interface Props {
 
 const Certification: React.FC<Props> = ({ certifications }) => {
   return (
-    <section className="relative lg:pt-[2rem] pb-[5rem]">
+    <motion.section
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        delay: 0.6,
+        y: { type: "spring", stiffness: 50 },
+        opacity: { duration: 1.8 },
+        ease: "easeInOut",
+        duration: 2.5,
+      }}
+      className="relative lg:pt-[2rem] pb-[5rem]"
+    >
       <article className="text-center">
         <h2 className="h2 text-gradient font-[500]">Certifications</h2>
       </article>
@@ -62,7 +76,7 @@ const Certification: React.FC<Props> = ({ certifications }) => {
           );
         })}
       </article>
-    </section>
+    </motion.section>
   );
 };
 

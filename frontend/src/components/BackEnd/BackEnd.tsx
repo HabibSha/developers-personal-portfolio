@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { motion } from "framer-motion";
 import { BsLightningFill } from "react-icons/bs";
 
 import heroC from "../../assets/home/heroC.svg";
@@ -35,13 +36,51 @@ const BackEnd: React.FC<Props> = ({ backendSocials, backendInfos }) => {
     <section>
       <article className="grid text-center gap-0 lg:text-start lg:grid-cols-2 lg:gap-5">
         <div className="order-2 lg:order-1">
-          <img src={heroC} alt="Backend" className="max-w-[100%] z-50" />
+          <motion.img
+            initial={{ x: -150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.6,
+              duration: 2,
+              x: { type: "spring", stiffness: 50 },
+              opacity: { duration: 1 },
+              ease: "easeInOut",
+            }}
+            src={heroC}
+            alt="Backend"
+            className="max-w-[100%] z-50"
+          />
         </div>
         <div className="pt-[10%] lg:pt-[28%] order-1 lg:order-2">
-          <h2 className="h2 text-gradient mb-8">
+          <motion.h2
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.6,
+              duration: 2,
+              x: { type: "spring", stiffness: 50 },
+              opacity: { duration: 1 },
+              ease: "easeInOut",
+            }}
+            className="h2 text-gradient mb-8"
+          >
             Backend Tools | Cloud Infra-Architecture | UI/UX design
-          </h2>
-          <div className="flex items-center gap-3 lg:gap-6 justify-center lg:justify-start lg:px-[2rem] ">
+          </motion.h2>
+          <motion.div
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.6,
+              duration: 2,
+              x: { type: "spring", stiffness: 50 },
+              opacity: { duration: 1 },
+              ease: "easeInOut",
+            }}
+            className="flex items-center gap-3 lg:gap-6 justify-center lg:justify-start lg:px-[2rem] "
+          >
             {backendSocials.map((backendSocial) => {
               const { id, title, icon } = backendSocial;
               return (
@@ -63,16 +102,29 @@ const BackEnd: React.FC<Props> = ({ backendSocials, backendInfos }) => {
                 </div>
               );
             })}
-          </div>
-          {backendInfos.map((backend) => {
+          </motion.div>
+          {backendInfos.map((backend, index) => {
             const { id, title } = backend;
             return (
-              <div key={id} className="flex gap-3 mb-4">
+              <motion.div
+                initial={{ x: 150, opacity: 0.5 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  delay: 1.5 + index * 0.5,
+                  duration: 2,
+                  x: { type: "spring", stiffness: 50 },
+                  opacity: { duration: 1 },
+                  ease: "easeInOut",
+                }}
+                key={id}
+                className="flex gap-3 mb-4"
+              >
                 <div className="mt-[6px] lg:mt-2">
                   <BsLightningFill className="text-colorPink text-[19px] animate-pulse" />
                 </div>
                 <p className="body-1 text-start">{title}</p>
-              </div>
+              </motion.div>
             );
           })}
         </div>

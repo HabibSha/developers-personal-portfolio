@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import educationA from "../../assets/education/educationA.svg";
-// import educationB from "../../assets/education/educationB.svg";
 import styles from "../../style";
 
 interface EducationWebLink {
@@ -28,7 +28,19 @@ const EducationHero: React.FC<Props> = ({ educationWebLinks }) => {
   };
 
   return (
-    <section className="relative py-[4rem] lg:py-[2rem]  grid grid-cols-1 lg:gap-5 lg:grid-cols-2">
+    <motion.section
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        delay: 0.6,
+        y: { type: "spring", stiffness: 50 },
+        opacity: { duration: 1.8 },
+        ease: "easeInOut",
+        duration: 2.5,
+      }}
+      className="relative py-[4rem] lg:py-[2rem]  grid grid-cols-1 lg:gap-5 lg:grid-cols-2"
+    >
       <article className="order-2 lg:order-1 flex justify-center">
         <img src={educationA} alt="Education" className="w-[80%]" />
       </article>
@@ -59,7 +71,7 @@ const EducationHero: React.FC<Props> = ({ educationWebLinks }) => {
           })}
         </div>
       </article>
-    </section>
+    </motion.section>
   );
 };
 

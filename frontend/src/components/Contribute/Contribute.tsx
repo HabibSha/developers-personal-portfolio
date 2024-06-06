@@ -1,5 +1,6 @@
 import React from "react";
 
+import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 
 interface ContributeSite {
@@ -14,8 +15,20 @@ interface Props {
 
 const Contribute: React.FC<Props> = ({ contributeSites }) => {
   return (
-    <section className="relative py-[3rem] lg:py-[5rem]">
-      <article className="">
+    <motion.section
+      initial={{ y: 70, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        delay: 0.6,
+        y: { type: "spring", stiffness: 50 },
+        opacity: { duration: 1 },
+        ease: "easeInOut",
+        duration: 1.5,
+      }}
+      className="relative py-[3rem] lg:py-[5rem]"
+    >
+      <article>
         <Marquee speed={100} pauseOnHover>
           {contributeSites.map((contributeSite) => {
             const { id, alt, image } = contributeSite;
@@ -114,7 +127,7 @@ const Contribute: React.FC<Props> = ({ contributeSites }) => {
           })}
         </Marquee>
       </article>
-    </section>
+    </motion.section>
   );
 };
 

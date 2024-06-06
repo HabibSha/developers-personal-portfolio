@@ -7,6 +7,7 @@ import Education from "../pages/Education/Education";
 import ContactMe from "../pages/Contact/ContactMe";
 import Experience from "../pages/Experience/Experience";
 import Error from "../pages/Error/Error";
+import ProjectDetails from "../pages/ProjecDetails/ProjectDetails";
 
 const Routers = () => {
   return (
@@ -16,6 +17,7 @@ const Routers = () => {
           <Route index element={<Home />} />
           <Route path="education" element={<Education />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="projects/:slug" element={<ProjectDetails />} />
           <Route path="experience" element={<Experience />} />
           <Route path="contact-me" element={<ContactMe />} />
           <Route path="*" element={<Error />} />

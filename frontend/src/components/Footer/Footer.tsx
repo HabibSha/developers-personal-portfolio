@@ -1,5 +1,6 @@
 import React from "react";
 
+import { motion } from "framer-motion";
 // import { Player } from "@lottiefiles/react-lottie-player";
 
 import {
@@ -24,11 +25,35 @@ const Footer: React.FC = () => {
             className={`flex items-start sm:items-center sm:justify-between ${styles.borderBottom} flex-col sm:flex-row pb-[2rem]`}
           >
             <Link to="/" className="mb-6 sm:mb-0">
-              <p className="text-xl md:text-2xl xl:text-3xl text-gradient font-Smooch">
+              <motion.p
+                initial={{ y: 40, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{
+                  delay: 0.6,
+                  y: { type: "spring", stiffness: 50 },
+                  opacity: { duration: 1 },
+                  ease: "easeInOut",
+                  duration: 1.5,
+                }}
+                className="text-xl md:text-2xl xl:text-3xl text-gradient font-Smooch"
+              >
                 &#8249; HabibShahedAlahi / &#8250;
-              </p>
+              </motion.p>
             </Link>
-            <div className="flex items-center gap-3 text-lg lg:text-xl">
+            <motion.div
+              initial={{ y: 40, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{
+                delay: 0.6,
+                y: { type: "spring", stiffness: 50 },
+                opacity: { duration: 1 },
+                ease: "easeInOut",
+                duration: 1.5,
+              }}
+              className="flex items-center gap-3 text-lg lg:text-xl"
+            >
               <Link
                 to="https://github.com/HabibSha"
                 target="_blank"
@@ -71,7 +96,7 @@ const Footer: React.FC = () => {
               >
                 <FaXTwitter />
               </Link>
-            </div>
+            </motion.div>
           </article>
           <article className={`${styles.flexCenter}`}>
             <p className="absolute bottom-2">

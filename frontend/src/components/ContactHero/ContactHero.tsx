@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import {
   FaGithub,
   FaLinkedinIn,
@@ -14,7 +16,19 @@ import { footerSocial } from "../../style";
 
 const ContactHero: React.FC = () => {
   return (
-    <section className="py-[2rem] lg:py-4">
+    <motion.section
+      initial={{ y: 50, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        delay: 0.6,
+        y: { type: "spring", stiffness: 50 },
+        opacity: { duration: 1.8 },
+        ease: "easeInOut",
+        duration: 2.5,
+      }}
+      className="py-[2rem] lg:py-4"
+    >
       <article className="grid text-center gap-0 lg:text-start lg:grid-cols-2 lg:gap-5">
         <div className="flex items-center justify-center xl:items-start xl:justify-start">
           <img
@@ -79,7 +93,7 @@ const ContactHero: React.FC = () => {
           </Link>
         </div>
       </article>
-    </section>
+    </motion.section>
   );
 };
 

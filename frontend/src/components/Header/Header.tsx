@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import { motion } from "framer-motion";
+
 import { NavLink as BaseNavLink, Link } from "react-router-dom";
 import {
   disableBodyScroll,
@@ -66,7 +68,19 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
           : "bg-transparent h-[9vh]"
       }`}
     >
-      <nav className={`${styles.flexBetween} container ${styles.paddingX}`}>
+      <motion.nav
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{
+          delay: 0,
+          x: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeInOut",
+          duration: 1,
+        }}
+        className={`${styles.flexBetween} container ${styles.paddingX}`}
+      >
         <Link to="/">
           <p className="text-xl md:text-2xl xl:text-3xl text-gradient font-Smooch">
             &#8249; HabibShahedAlahi / &#8250;
@@ -132,7 +146,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
             })}
           </ul>
         </div>
-      </nav>
+      </motion.nav>
     </section>
   );
 };
