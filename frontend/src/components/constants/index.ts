@@ -14,6 +14,7 @@ import firebase from "../../assets/social/firebase.svg";
 import figma from "../../assets/social/figma.svg";
 import aws from "../../assets/social/aws.svg";
 import github from "../../assets/social/github.svg";
+import stripe from "../../assets/social/stripe.svg";
 import lightning from "../../assets/home/lightning.svg";
 
 import openAi from "../../assets/contribute/openAi.png";
@@ -332,7 +333,6 @@ export const projectLists = [
       { id: "2", image: PEducation },
       { id: "3", image: PProjects },
       { id: "4", image: PContact },
-      { id: "5", image: "" },
     ],
     link: "https://github.com/HabibSha/developers-personal-portfolio",
     live: "",
@@ -458,8 +458,10 @@ export const projectLists = [
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "Redux", icon: redux },
-      { id: "3", title: "Tailwind", icon: tailwind },
-      { id: "4", title: "Firebase", icon: firebase },
+      { id: "3", title: "Express", icon: express },
+      { id: "4", title: "Stripe", icon: stripe },
+      { id: "5", title: "Tailwind", icon: tailwind },
+      { id: "6", title: "Firebase", icon: firebase },
     ],
     // alt: "RedOnion",
   },
@@ -512,13 +514,7 @@ export const projectLists = [
     technology:
       "MERN (MongoDB, Express, React, NodeJS), JWT, Redux, Stripe, Tailwind CSS, CSS",
     img: ecommerce,
-    images: [
-      { id: "1", image: ecommerce },
-      { id: "2", image: "" },
-      { id: "3", image: "" },
-      { id: "4", image: "" },
-      { id: "5", image: "" },
-    ],
+    images: [{ id: "1", image: ecommerce }],
     link: "https://github.com/HabibSha/dynamic_ecommerce_app",
     live: "",
     projectIcons: [
