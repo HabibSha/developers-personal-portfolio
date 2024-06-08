@@ -88,7 +88,10 @@ const ContactHero: React.FC = () => {
               <FaXTwitter />
             </Link>
           </div>
-          <Link to="#" target="_blank">
+          <Link
+            to="https://drive.google.com/file/d/1dgrrFLwHLx1L1CFyFOLKpJ002KrdNGNo/view"
+            target="_blank"
+          >
             <button className="btnPrimary mt-4">See My Resume</button>
           </Link>
         </div>

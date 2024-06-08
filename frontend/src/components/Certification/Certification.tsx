@@ -70,7 +70,7 @@ const Certification: React.FC<Props> = ({ certifications }) => {
               </Link>
               <div className="text-center my-4">
                 <h5 className="h6">{title}</h5>
-                <p className="text-gray-500 body-1 mt-1">-Name Here</p>
+                <p className="text-gray-500 body-1 mt-1">{name}</p>
               </div>
             </div>
           );

@@ -28,6 +28,7 @@ import w3schools from "../../assets/contribute/w3school.png";
 import codeacademy from "../../assets/contribute/codeacademy.png";
 
 import gub from "../../assets/education/gub.svg";
+import akmr from "../../assets/education/akmr.png";
 
 import hackerrank from "../../assets/website/hackerrank.svg";
 import leetcode from "../../assets/website/leetcode.svg";
@@ -243,7 +244,7 @@ export const educationInfos = [
     institute: "AKM Rahmatullah University College",
     subject: "HSC in Science",
     accomplish: "2017-2019",
-    image: gub,
+    image: akmr,
     details: [
       {
         id: "1",
@@ -258,7 +259,7 @@ export const educationInfos = [
         desc: "I wanted to find a program that would not only challenge me academically but also provide me with hands-on experience in the field.",
       },
     ],
-    link: "https://green.edu.bd/",
+    link: "#",
   },
 ];
 
@@ -267,7 +268,7 @@ export const certifications = [
     id: "1",
     title: "MERN Stack Fundamentals",
     alt: "Great Learning",
-    name: "",
+    name: "-Name Here",
     link: "https://olympus.mygreatlearning.com/courses/105615/certificate",
     image: greatlearning,
   },
@@ -275,15 +276,15 @@ export const certifications = [
     id: "2",
     title: "JavaScript for Beginners",
     alt: "Simply Learn",
-    name: "",
-    link: "https://lms.simplilearn.com/courses/4212/JavaScript-for-Beginners/certificate/download-skillup",
+    name: "-Krishna Kumar",
+    link: "https://drive.google.com/file/d/1ENSVC6394zdVAlAakDzUp0t3dJER2STn/view",
     image: simplylearn,
   },
   {
     id: "3",
     title: "JavaScript Specialist",
     alt: "Great Learning",
-    name: "",
+    name: "-Name Here",
     link: "https://olympus.mygreatlearning.com/courses/105615/certificate",
     image: greatlearning,
   },
@@ -335,7 +336,7 @@ export const projectLists = [
       { id: "4", image: PContact },
     ],
     link: "https://github.com/HabibSha/developers-personal-portfolio",
-    live: "",
+    live: "https://habibshahedalahi.netlify.app",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "JavaScript", icon: javascript },
@@ -395,7 +396,7 @@ export const projectLists = [
       { id: "5", image: CContact },
     ],
     link: "https://github.com/HabibSha/cyberez-courses",
-    live: "",
+    live: "https://cyberez.netlify.app",
     projectIcons: [
       { id: "1", title: "HTML5", icon: html5 },
       { id: "2", title: "CSS3", icon: css },
@@ -454,7 +455,7 @@ export const projectLists = [
       { id: "5", image: RRegister },
     ],
     link: "https://github.com/HabibSha/red-onion",
-    live: "",
+    live: "https://redonionweb.netlify.app",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "Redux", icon: redux },
@@ -516,7 +517,7 @@ export const projectLists = [
     img: ecommerce,
     images: [{ id: "1", image: ecommerce }],
     link: "https://github.com/HabibSha/dynamic_ecommerce_app",
-    live: "",
+    live: "#",
     projectIcons: [
       { id: "1", title: "ReactJS", icon: react },
       { id: "2", title: "NodeJS", icon: nodejs },

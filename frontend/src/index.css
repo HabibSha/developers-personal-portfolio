@@ -26,6 +26,19 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgb(43, 42, 42);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #e855de 0%, #5400ee 100%);
+  border-radius: 1rem;
+}
+
 .text-gradient {
   background: linear-gradient(to right, #e855de 0%, #5400ee 100%);
   -webkit-background-clip: text;

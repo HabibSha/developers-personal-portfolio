@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 
-import { NavLink as BaseNavLink, Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import {
   disableBodyScroll,
   enableBodyScroll,
@@ -12,6 +12,7 @@ import { RiMenu4Fill, RiCloseFill } from "react-icons/ri";
 
 import styles from "../../style";
 import "./header.css";
+import BaseNavLink from "./BaseNavLink";
 
 type NavLink = {
   id: string;
@@ -98,7 +99,6 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
                       ? "mr-0"
                       : "mr-[2.8rem] xl:mr-[4rem]"
                   } text-[14px] md:text-[15px] xl:text-[16px] hover:text-colorPink hover:font-[500] duration-300 ease-linear`}
-                  activeClassName="active"
                 >
                   {title}
                 </BaseNavLink>
@@ -132,7 +132,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
               const { id, link, title } = navLink;
               return (
                 <li key={id} className={`${styles.flexBetween}`}>
-                  <BaseNavLink
+                  <NavLink
                     to={link}
                     onClick={handleMenuClose}
                     className={`${
@@ -140,7 +140,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
                     } hover:text-gradient`}
                   >
                     {title}
-                  </BaseNavLink>
+                  </NavLink>
                 </li>
               );
             })}

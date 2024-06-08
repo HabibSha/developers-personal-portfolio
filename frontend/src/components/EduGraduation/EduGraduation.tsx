@@ -27,7 +27,7 @@ interface Props {
 
 const EduGraduation: React.FC<Props> = ({ educationInfos }) => {
   return (
-    <section className="relative py-[5rem]">
+    <section className="relative py-[5rem] overflow-hidden">
       <article className="text-center">
         <motion.h2
           initial={{ y: 30, opacity: 0 }}

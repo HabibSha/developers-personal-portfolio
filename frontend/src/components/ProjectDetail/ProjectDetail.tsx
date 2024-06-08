@@ -135,7 +135,7 @@ const ProjectDetail: React.FC<Props> = ({ projectLists }) => {
               className="flex items-center gap-2 btnSecondary"
             >
               <FaExternalLinkAlt />
-              <span>Live</span>
+              <span>Preview</span>
             </Link>
           </div>
         </div>

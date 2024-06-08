@@ -15,6 +15,7 @@ interface ProjectList {
   title: string;
   img: string;
   link: string;
+  live: string;
   projectIcons: ProjectIcon[];
 }
 
@@ -39,14 +40,14 @@ const ProjectLists: React.FC<Props> = ({ projectLists }) => {
 
   return (
     <section className="relative py-[5rem]">
-      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5">
+      <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-5">
         {projectLists.map((projectList, index) => {
-          const { id, title, img, link, projectIcons } = projectList;
+          const { id, title, img, link, live, projectIcons } = projectList;
           const slug = title.toLowerCase().replace(/ /g, "-");
           return (
             <div key={id} className="rounded-md bg-glassEffect">
               <div
-                className="w-full h-[10rem] lg:h-[13rem] bg-top hover:bg-bottom duration-1000 ease-linear bg-no-repeat bg-cover rounded-tl-md rounded-tr-md"
+                className="w-full h-[10rem] sm:h-[12rem] lg:h-[14rem] bg-top hover:bg-bottom duration-1000 ease-linear bg-no-repeat bg-cover rounded-tl-md rounded-tr-md"
                 style={{ backgroundImage: `url(${img})` }}
               ></div>
               <motion.div
@@ -68,7 +69,7 @@ const ProjectLists: React.FC<Props> = ({ projectLists }) => {
                     <Link to={link} target="_blank">
                       <FaGithub className="text-[1.4rem]" />
                     </Link>
-                    <Link to="#" target="_blank">
+                    <Link to={live} target="_blank">
                       <FaExternalLinkAlt className="text-xl" />
                     </Link>
                   </div>
