@@ -406,7 +406,7 @@ export const projectLists = [
   },
   {
     id: "3",
-    title: "RedOnion - A E-commerce Application for Foods Item",
+    title: "RedOnion - An E-commerce Application for Food Item",
     desc: "RedOnion is a sophisticated e-commerce application specifically designed for purchasing food items. The platform offers a seamless and user-friendly experience, utilizing the latest technologies to ensure efficient functionality and an engaging interface. This Website is designed to provide a smooth and enjoyable shopping experience for users, combining modern design with powerful functionality.",
     features: [
       {

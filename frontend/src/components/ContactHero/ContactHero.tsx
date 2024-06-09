@@ -89,7 +89,7 @@ const ContactHero: React.FC = () => {
             </Link>
           </div>
           <Link
-            to="https://drive.google.com/file/d/1dgrrFLwHLx1L1CFyFOLKpJ002KrdNGNo/view"
+            to="https://drive.google.com/file/d/1o7fKlAVP-5hu28HUC4i234utZr6S5v8Q/view"
             target="_blank"
           >
             <button className="btnPrimary mt-4">See My Resume</button>
