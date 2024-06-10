@@ -46,7 +46,7 @@ const ProjectDetail: React.FC<Props> = ({ projectLists }) => {
 
   return (
     <section className="relative py-[5rem]">
-      <article className="bg-glassEffect px-6 py-10">
+      <article className="bg-glassEffect px-2 py-8 md:px-6 md:py-10">
         <div className="border-b-[1px] border-colorIndigo pb-6">
           <motion.h2
             initial={{ x: 100, opacity: 0 }}
