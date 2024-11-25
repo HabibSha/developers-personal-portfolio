@@ -16,8 +16,8 @@ const ContactInfo: React.FC<Props> = ({ contactInfo }) => {
   return (
     <section className="relative py-[5rem]">
       <article className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-        {contactInfo.map((contactI) => {
-          const { id, title, contact, icon } = contactI;
+        {contactInfo.map((item) => {
+          const { id, title, contact, icon } = item;
           return (
             <div
               key={id}

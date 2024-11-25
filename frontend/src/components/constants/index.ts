@@ -545,7 +545,7 @@ export const contactInfo = [
   {
     id: "3",
     title: "My Location",
-    contact: "Madani Ave, Vatara, Main Road, Gulashan, Dhaka-1212",
+    contact: "Dhaka-1212, Bangladesh",
     icon: location,
   },
 ];
