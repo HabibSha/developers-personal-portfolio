@@ -13,7 +13,7 @@ function App() {
     if (!hasSeenIntro) {
       setShowIntro(true); // Show intro
       localStorage.setItem("hasSeenIntro", "true"); // Mark intro as seen
-      // Automatically hide the intro after 4 seconds
+      // Automatically hide the intro after 6 seconds
       setTimeout(() => {
         setShowIntro(false);
       }, 6000);
